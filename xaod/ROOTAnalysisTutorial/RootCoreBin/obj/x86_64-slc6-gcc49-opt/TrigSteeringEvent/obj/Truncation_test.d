@@ -1,0 +1,1 @@
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/TrigSteeringEvent/obj/Truncation_test.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/TrigSteeringEvent/obj/Truncation_test.d : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/TrigSteeringEvent/test/Truncation_test.cxx

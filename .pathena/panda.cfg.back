@@ -1,0 +1,6 @@
+[global]
+grid_src = /cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/user/pandaGridSetup.sh
+
+[book]
+last_synctime = 2016-06-22 23:06:31
+

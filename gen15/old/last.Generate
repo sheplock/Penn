@@ -1,0 +1,1 @@
+exec Generate_trf.py maxEvents=100 jobConfig=MC12.205048.Herwigpp_UEEE4_CTEQ6L1_sM_wA_WZ_C1_100_N1_0.py firstEvent=1 randomSeed=1 runNumber=205048 outputEVNTFile=test.EVNT.pool.root ecmEnergy=13000 $@

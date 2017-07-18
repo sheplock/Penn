@@ -1,0 +1,312 @@
+# trfJobReport file generated on 2016-08-23T16:51:00
+{'argValues': {'athenaopts': ['--preloadlib=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64/libintlc.so.5:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64/libimf.so'],
+               'ecmEnergy': 13000.0,
+               'firstEvent': 1,
+               'jobConfig': {'all': ['MC15.387632.MGPy8EG_A14N_TT_onestepBB_800_170_169.py']},
+               'maxEvents': {'all': 5000},
+               'outputEVNTFile': ['test2.EVNT.pool.root'],
+               'printEvts': 5,
+               'randomSeed': {'all': 1},
+               'runNumber': 387632},
+ 'cmdLine': "'/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/share/bin/Generate_tf.py' '--ecmEnergy' '13000' '--firstEvent' '1' '--randomSeed' '1' '--jobConfig' 'MC15.387632.MGPy8EG_A14N_TT_onestepBB_800_170_169.py' '--outputEVNTFile' 'test2.EVNT.pool.root' '--runNumber' '387632' '--maxEvents' '5000'",
+ 'created': '2016-08-23T16:51:00',
+ 'executor': [{'asetup': None,
+               'errMsg': '',
+               'exeConfig': {'outputs': ['EVNT'],
+                             'script': 'athena.py',
+                             'substep': None},
+               'logfileReport': {'countSummary': {'CRITICAL': 0,
+                                                  'DEBUG': 0,
+                                                  'ERROR': 0,
+                                                  'FATAL': 0,
+                                                  'IGNORED': 0,
+                                                  'INFO': 1462,
+                                                  'UNKNOWN': 47959,
+                                                  'VERBOSE': 0,
+                                                  'WARNING': 508},
+                                 'details': {}},
+               'metaData': {'GenFiltEff': '1.000000e+00',
+                            'contactPhysicist': 'takashi.yamanaka@cern.ch',
+                            'cross-section (nb)': '2.436e-05',
+                            'genFilterNames': '',
+                            'generator': 'Pythia 8.186',
+                            'generatorName': 'MadGraph+Pythia8+EvtGen',
+                            'generatorTune': 'A14 NNPDF23LO',
+                            'keywords': 'susy, simplifiedmodel',
+                            'physicsComment': 'stop direct pair production, st->b+chargino in simplified model',
+                            'specialConfig': 'NONE'},
+               'name': 'generate',
+               'rc': 0,
+               'statusOK': True,
+               'validation': True}],
+ 'exitAcronym': 'OK',
+ 'exitCode': 0,
+ 'exitMsg': 'OK',
+ 'exitMsgExtra': '',
+ 'files': {'input': [],
+           'output': [{'argName': 'outputEVNTFile',
+                       'dataset': None,
+                       'subFiles': [{'AODFixVersion': '',
+                                     'beam_energy': [6500000.0],
+                                     'beam_type': ['collisions'],
+                                     'conditions_tag': None,
+                                     'file_guid': '2918AF94-EB39-A247-82FE-712E283B05D6',
+                                     'file_size': 194779830,
+                                     'file_type': 'pool',
+                                     'geometry': None,
+                                     'integrity': True,
+                                     'lumi_block': [0L],
+                                     'name': 'test2.EVNT.pool.root',
+                                     'nentries': 5000L,
+                                     'run_number': [387632L]}],
+                       'type': 'EVNT'}]},
+ 'name': 'Generate_tf',
+ 'reportVersion': '1.0.1',
+ 'resource': {'executor': {'generate': {'cpuTime': 3555, 'wallTime': 3663}},
+              'machine': {'cpu_family': '6',
+                          'linux_distribution': ('Scientific Linux',
+                                                 '6.8',
+                                                 'Carbon'),
+                          'model': '26',
+                          'model_name': 'Intel(R) Xeon(R) CPU           X5570  @ 2.93GHz',
+                          'node': 'at3i00.hep.upenn.edu',
+                          'platform': 'Linux-2.6.32-573.12.1.el6.x86_64-x86_64-with-redhat-6.8-Carbon'},
+              'transform': {'cpuTime': 11,
+                            'externalCpuTime': 7,
+                            'wallTime': 3683}}}
+# Environment dump
+AIDAVERS=3.2.1
+ALPGENPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/alpgen/v2.1.4_p9
+ALRB_OSMAJORVER=6
+ALRB_OSTYPE=Linux
+ALRB_RELOCATECVMFS=NO
+ALRB_RHVER=6
+ALRB_SCRATCH=/home/shepj/.alrb
+ALRB_SFT_LCG=/cvmfs/sft.cern.ch/lcg
+ALRB_SFT_LCGEXT_MAP=/cvmfs/sft.cern.ch/lcg/mapfile.txt
+ALRB_SHELL=bash
+ALRB_allowSL6onSL5=NO
+ALRB_availableTools= agis asetup atlantis boost cmake davix dq2 eiclient emi fax fftw ganga gcc gccxml git gsl lcgenv pacman panda pod pyami python rcsetup root rucio sft swmgr xrootd
+ALRB_availableToolsPost= advanced diagnostics helpme printmenu showversions
+ALRB_availableToolsPre= lsetup
+ALRB_clientShell=bash
+ALRB_cvmfs_ALRB=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+ALRB_cvmfs_Athena=/cvmfs/atlas.cern.ch/repo/sw/software
+ALRB_cvmfs_CDB=/cvmfs/atlas-condb.cern.ch/repo/conditions
+ALRB_cvmfs_condb_repo=/cvmfs/atlas-condb.cern.ch/repo
+ALRB_cvmfs_nightly_repo=/cvmfs/atlas-nightlies.cern.ch/repo
+ALRB_cvmfs_repo=/cvmfs/atlas.cern.ch/repo
+ALRB_cvmfs_sft_repo=/cvmfs/sft.cern.ch/lcg
+ALRB_gridType=none
+ALRB_printHelpMain=
+ALRB_requestedVersions=rcsetup:00-04-16  asetup:V00-07-39  
+ALRB_testPath=,,
+ALRB_tmpScratch=/tmp/shepj/.alrb
+ALRB_useGridSW=emi
+ANT_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/Ant/1.7.0/share
+ANT_SITE=CMT
+ATLASCALDATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/ReleaseData/v19
+ATLASMKLLIBDIR=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/mkl/lib/intel64
+ATLASMKLLIBDIR_PRELOAD=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64
+ATLASTESTDATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/ReleaseData/v19/testfile
+ATLAS_DB_AREA=/cvmfs/atlas.cern.ch/repo/sw/database
+ATLAS_EXTERNAL=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/external
+ATLAS_GPERFTOOLS_DIR=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/x86_64-slc6-gcc47-opt/lib
+ATLAS_LOCAL_ASETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-07-39
+ATLAS_LOCAL_ASETUP_VERSION=V00-07-39
+ATLAS_LOCAL_RCSETUP_PATH=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-16
+ATLAS_LOCAL_RCSETUP_VERSION=00-04-16
+ATLAS_LOCAL_ROOT=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64
+ATLAS_LOCAL_ROOT_ARCH=x86_64
+ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
+ATLAS_LOCAL_ROOT_PACOPT=
+ATLAS_LOCAL_SETUP_OPTIONS=
+ATLAS_POOLCOND_PATH=/cvmfs/atlas-condb.cern.ch/repo/conditions
+ATLAS_RELEASE_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4
+ATLAS_TAGS_MAP=none
+AXIS_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/axis/1.4/share
+AXIS_VERSION=1.4
+AtlasArea=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4
+AtlasBaseDir=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4
+AtlasPatch=AtlasProduction
+AtlasPatchArea=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4
+AtlasPatchVersion=19.2.4.4
+AtlasProject=AtlasProduction
+AtlasSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/V00-07-39/AtlasSetup
+AtlasSetupRuntimeStatus=0
+AtlasSetupSite=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/AtlasSetup/.config/.asetup.site
+AtlasSetupStatus=0
+AtlasSetupVersion=AtlasSetup-00-07-39
+AtlasVersion=19.2.4.4
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+BCAST_CMD=make
+BLAS=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/blas/20110419/x86_64-slc6-gcc47-opt
+BoostVERS=1.53.0
+CALIBPATH=/home/shepj/gen15/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/database/GroupData:/afs/cern.ch/atlas/www/GROUPS/DATABASE/GroupData:http//atlas.web.cern.ch/Atlas/GROUPS/DATABASE/GroupData
+CLASSPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/CMT/v1r25p20140131/java
+CMTBIN=Linux-x86_64
+CMTCONFIG=x86_64-slc6-gcc47-opt
+CMTEXTRATAGS=ATLAS
+CMTHEADVERSION=<package>-r<revision>
+CMTPATH=/home/shepj/gen15:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/dqm-common/dqm-common-00-26-02:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/tdaq-common/tdaq-common-01-28-00:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b
+CMTPROJECTPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4:/cvmfs/atlas.cern.ch/repo/sw/tdaq/tdaq
+CMTROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/CMT/v1r25p20140131
+CMTSITE=STANDALONE
+CMTSTRUCTURINGSTYLE=without_version_directory
+CMTUSERCONTEXT=/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt
+COMPILER_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/gcc/4.7.2/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.7.2
+COOLVERS=COOL_2_9_1a
+COOL_DISABLE_CORALCONNECTIONPOOLCLEANUP=YES
+CORALVERS=CORAL_2_4_1
+CORAL_AUTH_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/XML/AtlasAuthentication
+CORAL_DBLOOKUP_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/XML/AtlasAuthentication
+CVS_RSH=ssh
+DATAPATH=/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Photos:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Pythia8B:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Herwig:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Sherpa:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Herwigpp:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Herwig7:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Pythia:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/Pythia8:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard/MadGraph:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Pythia:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Pythia8B:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Filters:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/ProtosLHEF:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/MadGraph:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/EvtGen:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Powheg:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/starlight:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Hijing:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Herwig7:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/HepMCReadFromFile:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Sherpa:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/ParticleGun:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Pythia8:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Epos:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/PythiaRhad:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common/Herwigpp:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/nonStandard:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/bin:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/gencontrol:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/exocontrol:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/susycontrol:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/topcontrol:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/higgscontrol:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/common:/cvmfs/atlas.cern.ch/repo/sw/Generators/MC15JobOptions/latest/share:/home/shepj/gen15/InstallArea/share:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/PartPropSvc/share:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/ReleaseData/v19:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/ReleaseData/v19/testfile:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/project/magfield/CTB
+DAVID_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/contrib/DAVID/1.34
+DAWN_BSD_UNIX_DOMAIN=1
+DAWN_GUI_ALWAYS=1
+DAWN_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/contrib/DAWN/3.85
+DBRELEASE_OVERRIDE=current
+DBRELEASE_REQUESTED=current
+DBRELEASE_REQUIRED=24.6.1
+DISPLAY=localhost:22.0
+DO_EXT_ATHENA_TAB_COMPLETION=0
+DYLD_LIBRARY_PATH=/home/shepj/gen15/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/qt/4.8.4/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/coin3d/3.1.3p2/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/soqt/1.5.0_qt4.8.4_coin3d3.1.3p2/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/qwt/6.0.1_qt4.8.4/x86_64-slc6-gcc47-opt/lib
+FASTJETPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/fastjet/3.0.3/x86_64-slc6-gcc47-opt
+FRONTIER_SERVER=(serverurl=http://atlasfrontier-ai.cern.ch:8000/atlr)(serverurl=http://lcgft-atlas.gridpp.rl.ac.uk:3128/frontierATLAS)(serverurl=http://frontier-atlas.lcg.triumf.ca:3128/ATLAS_frontier)(serverurl=http://ccfrontier.in2p3.fr:23128/ccin2p3-AtlasFrontier)
+G4DAWNFILE_VIEWER=dawn
+G4INCLUDE=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/include
+G4INSTALL=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/specific/x86_64-slc6-gcc47-opt/geant4.9.6.patch04.atlas01
+G4LEDATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/data/G4EMLOW
+G4LEVELGAMMADATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/data/PhotonEvaporation
+G4LIB=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/specific/x86_64-slc6-gcc47-opt/geant4.9.6.patch04.atlas01/lib
+G4LIB_BUILD_GDML=1
+G4NEUTRONHPDATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/data/G4NDL
+G4NEUTRONXSDATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/data/G4NEUTRONXS
+G4PATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases
+G4SAIDXSDATA=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/data/G4SAIDXSDATA
+G4SYSTEM=Linux-g++
+G4UI_USE_GAG=1
+G4UI_USE_TERMINAL=1
+G4UI_USE_WO=1
+G4UI_USE_XM_SESSION=1
+G4VERS=geant4.9.6.patch04.atlas01
+G4VIS_USE_DAWN=1
+G4VIS_USE_DAWNFILE=1
+G4VIS_USE_RAYTRACER=1
+G4VIS_USE_VRML=1
+G4VIS_USE_VRMLFILE=1
+GAUDIALGROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiAlg
+GAUDIAUDROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiAud
+GAUDIKERNELROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiKernel
+GAUDIPLUGINSERVICEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiPluginService
+GAUDIPOLICYROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiPolicy
+GAUDIPYTHONROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiPython
+GAUDISVCROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiSvc
+GAUDIUTILSROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiUtils
+GAUDI_DOXY_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/GaudiRelease/doc
+GCCXMLVERS=0.9.0_20120309p2
+GEANT4=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/specific/x86_64-slc6-gcc47-opt
+GFORTRAN_UNBUFFERED_ALL=y
+GSLVERS=1.10
+G_BROKEN_FILENAMES=1
+Geant4_data=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/Geant4/releases/share/geant4.9.6.patch04.atlas01/data
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOME=/home/shepj
+HOSTNAME=at3i00.hep.upenn.edu
+HepMCVERS=2.06.08
+JAVA_BASE=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java
+JAVA_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64
+JAVA_SUBDIR=sw/lcg/external/Java
+JDK_HOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64
+JOBOPTSEARCHPATH=/home/shepj/gen15/InstallArea/jobOptions:_joproxy15/nonStandard/Photos:_joproxy15/nonStandard/Pythia8B:_joproxy15/nonStandard/Herwig:_joproxy15/nonStandard/Sherpa:_joproxy15/nonStandard/Herwigpp:_joproxy15/nonStandard/Herwig7:_joproxy15/nonStandard/Pythia:_joproxy15/nonStandard/Pythia8:_joproxy15/nonStandard/MadGraph:_joproxy15/common/Pythia:_joproxy15/common/Pythia8B:_joproxy15/common/Filters:_joproxy15/common/ProtosLHEF:_joproxy15/common/MadGraph:_joproxy15/common/EvtGen:_joproxy15/common/Powheg:_joproxy15/common/starlight:_joproxy15/common/Hijing:_joproxy15/common/Herwig7:_joproxy15/common/HepMCReadFromFile:_joproxy15/common/Sherpa:_joproxy15/common/ParticleGun:_joproxy15/common/Pythia8:_joproxy15/common/Epos:_joproxy15/common/PythiaRhad:_joproxy15/common/Herwigpp:_joproxy15/nonStandard:_joproxy15/bin:_joproxy15/gencontrol:_joproxy15/exocontrol:_joproxy15/susycontrol:_joproxy15/topcontrol:_joproxy15/higgscontrol:_joproxy15/common:_joproxy15/share:/home/shepj/gen15/InstallArea/jobOptions:.:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/jobOptions:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/jobOptions
+LANG=C
+LAPACK=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/lapack/3.4.0/x86_64-slc6-gcc47-opt
+LATEXINPUTS=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/rivet/2.2.1/x86_64-slc6-gcc47-opt/share/Rivet/texmf/tex::
+LCGCMTVERS=67b
+LC_ALL=C
+LD_LIBRARY_PATH=/home/shepj/gen15/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b/InstallArea/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/hydjet/1.6/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSite/gcc-links/x86_64-slc6-gcc47-opt/lib64:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Python/2.7.3/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/external/yampl/1.0/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/tdaq-common/tdaq-common-01-28-00/installed/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64/jre/lib/amd64:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64/jre/lib/amd64/server:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64/jre/lib/amd64/native_threads:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64/jre/lib/amd64/xawt:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/coin3d/3.1.3p2/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/soqt/1.5.0_qt4.8.4_coin3d3.1.3p2/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/dqm-common/dqm-common-00-26-02/installed/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/qwt/6.0.1_qt4.8.4/x86_64-slc6-gcc47-opt/lib:/usr/lib64
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LHAPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67c/lhapdf/6.1.5/x86_64-slc6-gcc47-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/lhapdfsets/current/
+LHAPDF_DATA_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67c/lhapdf/6.1.5/x86_64-slc6-gcc47-opt/share/LHAPDF:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/lhapdfsets/current/
+LOADEDMODULES=
+LOCAL_INSTALL_DIR=/home/shepj/gen15/InstallArea/jobOptions
+LOGNAME=shepj
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+MADPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/madgraph/MG5_aMC_v2_2_3
+MAIL=/var/spool/mail/shepj
+MAKEFLAGS=-j16 QUICK=1 -l16
+MANPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/external/root-snapshot/atlas-5.34.13p1/x86_64-slc6-gcc47-opt/man:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/gccxml/0.9.0_20120309p2/x86_64-slc6-gcc47-opt/share/man:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Python/2.7.3/x86_64-slc6-gcc47-opt/share/man:/usr/local/share/man:/usr/share/man/overrides:/usr/share/man/en:/usr/share/man
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MODULESHOME=/usr/share/Modules
+My_SQL=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/mysql/5.5.14/x86_64-slc6-gcc47-opt
+NEWCMTCONFIG=x86_64-sl68-gcc472
+NLS_LANG=AMERICAN_AMERICA.WE8ISO8859P1
+NO_ALL_GROUPS=1
+OLDPWD=/home/shepj/gen15/MC15JobOptions
+ORA_FPU_PRECISION=EXTENDED
+PARTPROPSVCROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/PartPropSvc
+PATH=/home/shepj/gen15/InstallArea/share/bin:/home/shepj/gen15/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/scripts:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/scripts:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b/InstallArea/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/rivet/2.2.1/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/yoda/1.3.0/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67c/lhapdf/6.1.5/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/qt/4.8.4/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/pygraphics/1.4_python2.7/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/pyanalysis/1.4_python2.7/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/sqlite/3070900/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/Ant/1.7.0/share/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/pytools/1.8_python2.7/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/oracle/11.2.0.3.0/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/app/releases/COOL/COOL_2_9_1a/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/app/releases/CORAL/CORAL_2_4_1/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/external/root-snapshot/atlas-5.34.13p1/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/xrootd/3.2.7/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/gccxml/0.9.0_20120309p2/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Python/2.7.3/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSite/gcc-links/x86_64-slc6-gcc47-opt/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/dell/srvadmin/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/CMT/v1r25p20140131/Linux-x86_64:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64/jre/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/Java/JDK/1.6.0/amd64/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/tdaq-common/tdaq-common-01-28-00/installed/x86_64-slc6-gcc47-opt/bin:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/dqm-common/dqm-common-00-26-02/installed/x86_64-slc6-gcc47-opt/bin
+POOLDB_ROOTDEFS=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/share/AtlasRootHacks.h;
+POWHEGPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/powhegbox/ATLASOTF-00-03-03/POWHEG-BOX
+PWD=/home/shepj/gen15
+PYTHONPATH=/home/shepj/gen15/InstallArea/python:/home/shepj/gen15/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib/python2.7:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/rivet/2.2.1/x86_64-slc6-gcc47-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/yoda/1.3.0/x86_64-slc6-gcc47-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67c/lhapdf/6.1.5/x86_64-slc6-gcc47-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/pygraphics/1.4_python2.7/x86_64-slc6-gcc47-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/pyanalysis/1.4_python2.7/x86_64-slc6-gcc47-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/external/ZSI/2.1-a1/lib/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/pytools/1.8_python2.7/x86_64-slc6-gcc47-opt/lib/python2.7/site-packages:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/app/releases/COOL/COOL_2_9_1a/x86_64-slc6-gcc47-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/app/releases/CORAL/CORAL_2_4_1/x86_64-slc6-gcc47-opt/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/app/releases/CORAL/CORAL_2_4_1/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/external/root-snapshot/atlas-5.34.13p1/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/tdaq-common/tdaq-common-01-28-00/installed/share/lib/python:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/tdaq-common/tdaq-common-01-28-00/installed/x86_64-slc6-gcc47-opt/lib:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/dqm-common/dqm-common-00-26-02/installed/share/lib/python
+PythonVERS=2.7.3
+QMtestVERS=2.4.1
+QTDIR=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/qt/4.8.4/x86_64-slc6-gcc47-opt
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+QT_PLUGIN_PATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/qwt/6.0.1_qt4.8.4/x86_64-slc6-gcc47-opt/plugins
+ROOTHISTCNVROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/RootHistCnv
+ROOTMAPSEARCHPATH=/home/shepj/gen15/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/rootmap:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b/InstallArea/rootmap
+ROOTSYS=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/atlas/offline/external/root-snapshot/atlas-5.34.13p1/x86_64-slc6-gcc47-opt
+ROOTVERS=5.34.13p1
+ROOT_INCLUDE_PATH=/home/shepj/gen15/InstallArea/root-include-path:/home/shepj/gen15/InstallArea/include:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/dqm-common/dqm-common-00-26-02/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/tdaq-common/tdaq-common-01-28-00/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b/InstallArea/root-include-path:/cvmfs/atlas.cern.ch/repo/tools/slc6/cmt/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasOffline/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasEvent/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/GAUDI/v25r3p1/InstallArea/include:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/LCGCMT/LCGCMT_67b/InstallArea/include
+SELINUX_LEVEL_REQUESTED=
+SELINUX_ROLE_REQUESTED=
+SELINUX_USE_CURRENT_RANGE=
+SHELL=/bin/bash
+SHLVL=1
+SITEROOT=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4
+SSH_CLIENT=128.91.45.83 45215 22
+SSH_CONNECTION=128.91.45.83 45215 128.91.77.183 22
+SSH_TTY=/dev/pts/20
+SVNGROUPS=svn+ssh://svn.cern.ch/reps/atlasgroups
+SVNGRP=svn+ssh://svn.cern.ch/reps/atlasgrp
+SVNINST=svn+ssh://svn.cern.ch/reps/atlasinst
+SVNOFF=svn+ssh://svn.cern.ch/reps/atlasoff
+SVNPERF=svn+ssh://svn.cern.ch/reps/atlasperf
+SVNPHYS=svn+ssh://svn.cern.ch/reps/atlasphys
+SVNROOT=svn+ssh://svn.cern.ch/reps/atlasoff
+SVNUSR=svn+ssh://svn.cern.ch/reps/atlas-shepj
+TCMALLOCDIR=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/x86_64-slc6-gcc47-opt/lib
+TERM=xterm
+TEXINPUTS=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/rivet/2.2.1/x86_64-slc6-gcc47-opt/share/Rivet/texmf/tex::
+TEXMFCNF=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/rivet/2.2.1/x86_64-slc6-gcc47-opt/share/Rivet/texmf/cnf::
+TEXMFHOME=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/MCGenerators_lcgcmt67b/rivet/2.2.1/x86_64-slc6-gcc47-opt/share/Rivet/texmf::
+TNS_ADMIN=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/lcg/external/oracle/11.2.0.3.0/x86_64-slc6-gcc47-opt/admin
+TestArea=/home/shepj/gen15
+TwissFilesPATH=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/external/TwissFiles/TwissFiles/v003
+USER=shepj
+VERBOSE=
+XMLPATH=/home/shepj/gen15/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasSimulation/19.2.4/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasAnalysis/19.2.4/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasTrigger/19.2.4/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasReconstruction/19.2.4/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasConditions/19.2.4/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasCore/19.2.4/InstallArea/XML:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/DetCommon/19.2.4/InstallArea/XML
+XMODIFIERS=@im=none
+XRD_ENABLEFORKHANDLERS=1
+XRD_RUNFORKHANDLER=1
+XercesCVERS=3.1.1p1
+ZSI_VERSION=2.1-a1
+_=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/share/bin/Generate_tf.py
+_JAVA_OPTIONS=-Xms64m -Xmx128m
+colon=:
+host_cmtconfig=x86_64-slc6-gcc44-opt
+rcSetup=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/rcSetup/00-04-16
+uuidVERS=1.42
+# Machine report
+{'cpu_family': '6',
+ 'linux_distribution': ('Scientific Linux', '6.8', 'Carbon'),
+ 'model': '26',
+ 'model_name': 'Intel(R) Xeon(R) CPU           X5570  @ 2.93GHz',
+ 'node': 'at3i00.hep.upenn.edu',
+ 'platform': 'Linux-2.6.32-573.12.1.el6.x86_64-x86_64-with-redhat-6.8-Carbon'}

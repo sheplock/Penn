@@ -1,0 +1,1355 @@
+starting batch job initialization
+batch job user initialization finished
+at3f13.hep.upenn.edu
+/home/shepj/xaod/ROOTAnalysisTutorial/Run/singletop_weights
+shepj
+
+Processing /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/RootCore/scripts/load_packages.C...
+xAOD::Init                INFO    Environment initialised for data access
+Processing /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/RootCore/scripts/load_packages.C...
+load_packages.C already run, not running again
+Processing /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/user_scripts/EventLoop/batch_worker.C(1,"/home/shepj/xaod/ROOTAnalysisTutorial/Run/singletop_weights/submit/config.root")...
+/var/lib/condor/execute/dir_6562/EventLoop-Worker-mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613-1-1472479662-6563
+Processing File file:///disk/userdata00/atlas_data2/shepj/mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613//DAOD_TRUTH1.08398024._000002.pool.root.1
+Hostname is at3f13.hep.upenn.edu
+the metadata had for veto directory: 
+output
+tempdir
+Old file name is /disk/userdata00/atlas_data2/shepj/mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613//DAOD_TRUTH1.08398024._000002.pool.root.1
+New file name is _disk_userdata00_atlas_data2_shepj_mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613__DAOD_TRUTH1.08398024._000002.pool.root.1
+Job location: /home/shepj/xaod/ROOTAnalysisTutorial/Run/singletop_weights
+Veto directory: /home/shepj/xaod/ROOTAnalysisTutorial/Run/singletop_weights/veto
+Transfer begin for _disk_userdata00_atlas_data2_shepj_mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613__DAOD_TRUTH1.08398024._000002.pool.root.1
+cp /disk/userdata00/atlas_data2/shepj/mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613//DAOD_TRUTH1.08398024._000002.pool.root.1 tempdir/_disk_userdata00_atlas_data2_shepj_mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613__DAOD_TRUTH1.08398024._000002.pool.root.1
+Transfer end. xrd command result: 
+Checking that file exists tempdir/_disk_userdata00_atlas_data2_shepj_mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613__DAOD_TRUTH1.08398024._000002.pool.root.1
+File exists: tempdir/_disk_userdata00_atlas_data2_shepj_mc15_13TeV.407019.PowhegPythiaEvtGen_P2012CT10_Wt_inclusive_top_MET200.merge.DAOD_TRUTH1.e4024_p2613__DAOD_TRUTH1.08398024._000002.pool.root.1
+Breaking out of queue after this many tries: 1
+MyxAODAnalysis::initia... INFO    Number of events = 450000
+TInterpreter::AutoParse   ERROR   Error parsing payload code for class xAOD::MissingETAuxContainer_v1 with content:
+
+
+#ifndef G__VECTOR_HAS_CLASS_ITERATOR
+  #define G__VECTOR_HAS_CLASS_ITERATOR 1
+#endif
+#ifndef ROOTCORE
+  #define ROOTCORE 1
+#endif
+#ifndef ROOTCORE_RELEASE_SERIES
+  #define ROOTCORE_RELEASE_SERIES 23
+#endif
+#ifndef ROOTCORE_TEST_FILE
+  #define ROOTCORE_TEST_FILE "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef ROOTCORE_TEST_DATA
+  #define ROOTCORE_TEST_DATA "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630"
+#endif
+#ifndef ASG_TEST_FILE_DATA
+  #define ASG_TEST_FILE_DATA "/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1"
+#endif
+#ifndef ASG_TEST_FILE_MC
+  #define ASG_TEST_FILE_MC "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef XAOD_STANDALONE
+  #define XAOD_STANDALONE 1
+#endif
+#ifndef XAOD_ANALYSIS
+  #define XAOD_ANALYSIS 1
+#endif
+#ifndef ROOTCORE_PACKAGE
+  #define ROOTCORE_PACKAGE "xAODMissingET"
+#endif
+
+#define _BACKWARD_BACKWARD_WARNING_H
+// Dear emacs, this is -*- c++ -*-
+// $Id: xAODMissingETDict.h 662681 2015-04-23 18:04:34Z khoo $
+#ifndef XAODMISSINGET_XAODMISSINGETDICT_H
+#define XAODMISSINGET_XAODMISSINGETDICT_H
+
+// Needed to successfully generate the dictionary in standalone mode:
+#if defined(__GCCXML__) and not defined(EIGEN_DONT_VECTORIZE)
+#   define EIGEN_DONT_VECTORIZE
+#endif // __GCCXML__
+
+// System include(s):
+#include <vector>
+
+// EDM include(s):
+#include "AthLinks/DataLink.h"
+#include "AthLinks/ElementLink.h"
+
+// Local include(s):
+#include "xAODMissingET/MissingETContainer.h"
+#include "xAODMissingET/MissingETAuxContainer.h"
+#include "xAODMissingET/MissingETComponentMap.h"
+#include "xAODMissingET/MissingETAuxComponentMap.h"
+#include "xAODMissingET/MissingETAssociationMap.h"
+#include "xAODMissingET/MissingETAuxAssociationMap.h"
+#include "xAODMissingET/versions/MissingETBase.h"
+
+namespace {
+   struct GCCXML_DUMMY_INSTANTIATION_XAODMISSINGET {
+      // Container(s):
+      DataVector< xAOD::MissingET_v1 > c1;
+      xAOD::MissingETContainer_v1 c2;
+      DataVector< xAOD::MissingETComponent_v1 > c3;
+      xAOD::MissingETComponentMap_v1 c4;
+      DataVector< xAOD::MissingETAssociation_v1 > c5;
+      xAOD::MissingETAssociationMap_v1 c6;
+      // Smart pointer(s):
+      DataLink< xAOD::MissingETContainer_v1 > dl1;
+      std::vector< DataLink< xAOD::MissingETContainer_v1 > > dl2;
+      ElementLink< xAOD::MissingETContainer_v1 > el1;
+      std::vector< ElementLink< xAOD::MissingETContainer_v1 > > el2;
+      std::vector< std::vector< ElementLink< xAOD::MissingETContainer_v1 > > > el3;
+      DataLink< xAOD::MissingETComponentMap_v1 > dl3;
+      std::vector< DataLink< xAOD::MissingETComponentMap_v1 > > dl4;
+      ElementLink< xAOD::MissingETComponentMap_v1 > el4;
+      std::vector< ElementLink< xAOD::MissingETComponentMap_v1 > > el5;
+      std::vector< std::vector< ElementLink< xAOD::MissingETComponentMap_v1 > > > el6;
+      DataLink< xAOD::MissingETAssociationMap_v1 > dl5;
+      std::vector< DataLink< xAOD::MissingETAssociationMap_v1 > > dl6;
+      ElementLink< xAOD::MissingETAssociationMap_v1 > el7;
+      std::vector< ElementLink< xAOD::MissingETAssociationMap_v1 > > el8;
+      std::vector< std::vector< ElementLink< xAOD::MissingETAssociationMap_v1 > > > el9;
+
+      // Smart pointers needed for the correct generation of the auxiliary
+      // class dictionaries:
+      ElementLink< xAOD::IParticleContainer > el10;
+      std::vector< ElementLink< xAOD::IParticleContainer > > el11;
+      std::vector< std::vector< ElementLink< xAOD::IParticleContainer > > > el12;
+
+      std::vector< MissingETBase::Types::bitmask_t > vec1;
+      std::vector< unsigned long long > vec2;
+      std::vector< std::vector< size_t > > vec3;
+      std::vector< std::vector< unsigned char > > vec4;
+      std::vector< std::vector< unsigned long long > > vec5;
+      std::vector< std::vector< std::vector< size_t > > > vec6;
+      std::vector< std::vector< std::vector< unsigned long > > > vec7;
+      std::vector< std::vector< std::vector< unsigned char > > > vec8;
+      std::vector< std::vector<std::vector<unsigned long long> > > vec9;
+   };
+}
+
+#endif // XAODMISSINGET_XAODMISSINGETDICT_H
+
+#undef  _BACKWARD_BACKWARD_WARNING_H
+
+TClass::LoadClassInfo     ERROR   no interpreter information for class xAOD::MissingETAuxContainer_v1 is available eventhough it has a TClass initialization routine.
+xAOD::TEvent::setUpDyn... WARNING Couldn't find setName(...) function for container MET_TruthAux.  (type: xAOD::MissingETAuxContainer_v1)
+TInterpreter::AutoParse   ERROR   Error parsing payload code for class xAOD::JetAuxContainer_v1 with content:
+
+
+#ifndef G__VECTOR_HAS_CLASS_ITERATOR
+  #define G__VECTOR_HAS_CLASS_ITERATOR 1
+#endif
+#ifndef ROOTCORE
+  #define ROOTCORE 1
+#endif
+#ifndef ROOTCORE_RELEASE_SERIES
+  #define ROOTCORE_RELEASE_SERIES 23
+#endif
+#ifndef ROOTCORE_TEST_FILE
+  #define ROOTCORE_TEST_FILE "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef ROOTCORE_TEST_DATA
+  #define ROOTCORE_TEST_DATA "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630"
+#endif
+#ifndef ASG_TEST_FILE_DATA
+  #define ASG_TEST_FILE_DATA "/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1"
+#endif
+#ifndef ASG_TEST_FILE_MC
+  #define ASG_TEST_FILE_MC "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef XAOD_STANDALONE
+  #define XAOD_STANDALONE 1
+#endif
+#ifndef XAOD_ANALYSIS
+  #define XAOD_ANALYSIS 1
+#endif
+#ifndef ROOTCORE_PACKAGE
+  #define ROOTCORE_PACKAGE "xAODJet"
+#endif
+
+#define _BACKWARD_BACKWARD_WARNING_H
+// Dear emacs, this is -*- c++ -*-
+// $Id: xAODJetDict.h 658646 2015-04-02 10:29:26Z delsart $
+#ifndef XAODJET_XAODJETDICT_H
+#define XAODJET_XAODJETDICT_H
+
+// Needed to successfully generate the dictionary in standalone mode:
+#if defined(__GCCXML__) and not defined(EIGEN_DONT_VECTORIZE)
+#   define EIGEN_DONT_VECTORIZE
+#endif // __GCCXML__
+
+// System include(s):
+#include <vector>
+
+// EDM include(s):
+#include "AthLinks/DataLink.h"
+#include "AthLinks/ElementLink.h"
+#include "AthLinks/ElementLinkVector.h"
+
+// Local include(s):
+#include "xAODJet/JetContainer.h"
+#include "xAODJet/versions/JetContainer_v1.h"
+#include "xAODJet/versions/JetAuxContainer_v1.h"
+#include "xAODJet/versions/JetTrigAuxContainer_v1.h"
+#include "xAODJet/versions/Jet_v1.h"
+#include "xAODJet/JetTypes.h"
+
+namespace {
+   struct GCCXML_DUMMY_INSTANTIATION_XAODJET {
+      // Instantiate the container for gccxml:
+      xAOD::JetContainer_v1 c1;
+
+      // Smart pointers to Jet_v1:
+      DataLink< xAOD::JetContainer_v1 > e1;
+      std::vector< DataLink< xAOD::JetContainer_v1 > > e2;
+      ElementLink< xAOD::JetContainer_v1 > e3;
+      std::vector< ElementLink< xAOD::JetContainer_v1 > > e4;
+      std::vector< std::vector< ElementLink< xAOD::JetContainer_v1 > > > e5;
+      ElementLinkVector< xAOD::JetContainer_v1 > e6;
+      std::vector< ElementLinkVector< xAOD::JetContainer_v1 > > e7;
+
+      // Instantiations to create the EL member dictionaries correctly:
+      xAOD::IParticleContainer pc1;
+      ElementLink<xAOD::IParticleContainer> e10;
+
+     std::pair<std::string,std::vector<const xAOD::IParticle*> > bug1;
+     std::pair<std::string,std::vector<float> > bug2;
+     std::pair<std::string,std::vector<std::vector<int> > > bug3;
+     std::pair<std::string,std::vector<std::vector<float> > > bug4;
+
+     // momentums     
+     //xAOD::JetFourMom_t jet4mom;
+     std::vector<xAOD::JetFourMom_t> vjet4mom;
+
+     //std::vector<const xAOD::IParticle*> vpart; not yet : not sure this belongs elsewhere ?
+     //
+   };
+}
+
+
+template float xAOD::Jet_v1::getAttribute<float> (xAOD::JetAttribute::AttributeID) const ; 
+template int xAOD::Jet_v1::getAttribute<int> (xAOD::JetAttribute::AttributeID) const ; 
+template xAOD::JetFourMom_t xAOD::Jet_v1::getAttribute<xAOD::JetFourMom_t> (xAOD::JetAttribute::AttributeID) const ; 
+template std::vector<float> xAOD::Jet_v1::getAttribute< std::vector<float> > (xAOD::JetAttribute::AttributeID) const ;
+template std::vector<int> xAOD::Jet_v1::getAttribute< std::vector<int> > (xAOD::JetAttribute::AttributeID) const ;
+
+template float xAOD::Jet_v1::getAttribute<float> (const std::string &) const ; 
+template int xAOD::Jet_v1::getAttribute<int> (const std::string &) const ; 
+template xAOD::JetFourMom_t xAOD::Jet_v1::getAttribute<xAOD::JetFourMom_t> (const std::string &) const ; 
+template std::vector<float> xAOD::Jet_v1::getAttribute< std::vector<float> > (const std::string &) const ;
+template std::vector<int> xAOD::Jet_v1::getAttribute< std::vector<int> > (const std::string &) const ;
+
+
+template void xAOD::Jet_v1::setAttribute<float>(const std::string &, const float& ) ;
+template void xAOD::Jet_v1::setAttribute<int>(const std::string &, const int& ) ;
+
+template void xAOD::Jet_v1::setAttribute<std::vector<float> >(const std::string &, const std::vector<float>& ) ;
+template void xAOD::Jet_v1::setAttribute<std::vector<int> >(const std::string &, const std::vector<int>& ) ;
+
+
+
+template std::vector<const xAOD::IParticle*> xAOD::Jet_v1::getAssociatedObjects<xAOD::IParticle >( xAOD::JetAttribute::AssoParticlesID ) const;
+template std::vector<const xAOD::IParticle*> xAOD::Jet_v1::getAssociatedObjects<xAOD::IParticle >( const std::string &  ) const ;
+
+template void xAOD::Jet_v1::setAssociatedObjects<xAOD::IParticle >( const std::string &, const std::vector<const xAOD::IParticle*>& ) ;
+
+
+template const xAOD::IParticle* xAOD::Jet_v1::getAssociatedObject<xAOD::IParticle>( const std::string &) const ;
+template const xAOD::IParticle* xAOD::Jet_v1::getAssociatedObject<xAOD::IParticle>( xAOD::JetAttribute::AssoParticlesID ) const ;
+template void xAOD::Jet_v1::setAssociatedObject<xAOD::IParticle>( const std::string &,  const xAOD::IParticle* ) ;
+
+
+
+#endif // XAODJET_XAODJETDICT_H
+
+#undef  _BACKWARD_BACKWARD_WARNING_H
+
+TClass::LoadClassInfo     ERROR   no interpreter information for class xAOD::JetAuxContainer_v1 is available eventhough it has a TClass initialization routine.
+xAOD::TEvent::setUpDyn... WARNING Couldn't find setName(...) function for container AntiKt4TruthJetsAux.  (type: xAOD::JetAuxContainer_v1)
+total weighted event: 0.000168052
+pass at least 1 lepton cut: 9.1199e-05
+pass exactly 1 lepton cut: 7.96576e-05
+pass 200 MET cut: 4.27135e-05
+pass 2 b-jet cut: 2.02131e-05
+pass b-jets pt cut: 4.67769e-06
+pass aMT2 cut: 3.92653e-06
+pass close b-jet/MET: 2.90222e-06
+pass mbb cut: 2.79979e-06
+pass pT_lep / MET cut: 1.70718e-07
+pass pT_lep cut: 1.36575e-07
+ 
+total weighted event: 0.000335982
+pass at least 1 lepton cut: 0.000179751
+pass exactly 1 lepton cut: 0.000156335
+pass 200 MET cut: 8.38332e-05
+pass 2 b-jet cut: 3.94592e-05
+pass b-jets pt cut: 8.46552e-06
+pass aMT2 cut: 6.75888e-06
+pass close b-jet/MET: 5.01795e-06
+pass mbb cut: 4.67664e-06
+pass pT_lep / MET cut: 3.07217e-07
+pass pT_lep cut: 3.41322e-07
+ 
+total weighted event: 0.000504614
+pass at least 1 lepton cut: 0.000269065
+pass exactly 1 lepton cut: 0.000233251
+pass 200 MET cut: 0.000125609
+pass 2 b-jet cut: 5.85025e-05
+pass b-jets pt cut: 1.26634e-05
+pass aMT2 cut: 1.01035e-05
+pass close b-jet/MET: 7.81647e-06
+pass mbb cut: 7.33865e-06
+pass pT_lep / MET cut: 4.09602e-07
+pass pT_lep cut: 4.43708e-07
+ 
+total weighted event: 0.000672652
+pass at least 1 lepton cut: 0.00035967
+pass exactly 1 lepton cut: 0.000311911
+pass 200 MET cut: 0.000168643
+pass 2 b-jet cut: 7.91992e-05
+pass b-jets pt cut: 1.70687e-05
+pass aMT2 cut: 1.37917e-05
+pass close b-jet/MET: 1.06509e-05
+pass mbb cut: 1.00023e-05
+pass pT_lep / MET cut: 6.48651e-07
+pass pT_lep cut: 6.48607e-07
+ 
+total weighted event: 0.000841851
+pass at least 1 lepton cut: 0.000449147
+pass exactly 1 lepton cut: 0.000389714
+pass 200 MET cut: 0.000211983
+pass 2 b-jet cut: 9.97551e-05
+pass b-jets pt cut: 2.18152e-05
+pass aMT2 cut: 1.75479e-05
+pass close b-jet/MET: 1.35875e-05
+pass mbb cut: 1.28024e-05
+pass pT_lep / MET cut: 8.53534e-07
+pass pT_lep cut: 7.85195e-07
+ 
+total weighted event: 0.00101015
+pass at least 1 lepton cut: 0.000540254
+pass exactly 1 lepton cut: 0.000468166
+pass 200 MET cut: 0.000254757
+pass 2 b-jet cut: 0.000120255
+pass b-jets pt cut: 2.70335e-05
+pass aMT2 cut: 2.16065e-05
+pass close b-jet/MET: 1.66912e-05
+pass mbb cut: 1.58719e-05
+pass pT_lep / MET cut: 1.05817e-06
+pass pT_lep cut: 1.05805e-06
+ 
+total weighted event: 0.00117831
+pass at least 1 lepton cut: 0.000631107
+pass exactly 1 lepton cut: 0.000545881
+pass 200 MET cut: 0.000299001
+pass 2 b-jet cut: 0.000141592
+pass b-jets pt cut: 3.16432e-05
+pass aMT2 cut: 2.52943e-05
+pass close b-jet/MET: 1.93887e-05
+pass mbb cut: 1.84329e-05
+pass pT_lep / MET cut: 1.19475e-06
+pass pT_lep cut: 1.22877e-06
+ 
+total weighted event: 0.00134674
+pass at least 1 lepton cut: 0.000724385
+pass exactly 1 lepton cut: 0.000626039
+pass 200 MET cut: 0.000342667
+pass 2 b-jet cut: 0.000162562
+pass b-jets pt cut: 3.65276e-05
+pass aMT2 cut: 2.90855e-05
+pass close b-jet/MET: 2.21553e-05
+pass mbb cut: 2.11311e-05
+pass pT_lep / MET cut: 1.50215e-06
+pass pT_lep cut: 1.43371e-06
+ 
+total weighted event: 0.00151552
+pass at least 1 lepton cut: 0.000814605
+pass exactly 1 lepton cut: 0.000703979
+pass 200 MET cut: 0.00038469
+pass 2 b-jet cut: 0.000182542
+pass b-jets pt cut: 4.10969e-05
+pass aMT2 cut: 3.24272e-05
+pass close b-jet/MET: 2.46445e-05
+pass mbb cut: 2.33817e-05
+pass pT_lep / MET cut: 1.70674e-06
+pass pT_lep cut: 1.6042e-06
+ 
+total weighted event: 0.00168402
+pass at least 1 lepton cut: 0.000905132
+pass exactly 1 lepton cut: 0.000782193
+pass 200 MET cut: 0.000427466
+pass 2 b-jet cut: 0.000202138
+pass b-jets pt cut: 4.52955e-05
+pass aMT2 cut: 3.58066e-05
+pass close b-jet/MET: 2.72729e-05
+pass mbb cut: 2.59077e-05
+pass pT_lep / MET cut: 2.1505e-06
+pass pT_lep cut: 1.87728e-06
+ 
+total weighted event: 0.00185198
+pass at least 1 lepton cut: 0.000995318
+pass exactly 1 lepton cut: 0.000860543
+pass 200 MET cut: 0.000469218
+pass 2 b-jet cut: 0.000221768
+pass b-jets pt cut: 4.98696e-05
+pass aMT2 cut: 3.9459e-05
+pass close b-jet/MET: 3.01061e-05
+pass mbb cut: 2.86385e-05
+pass pT_lep / MET cut: 2.35532e-06
+pass pT_lep cut: 2.11623e-06
+ 
+total weighted event: 0.00201943
+pass at least 1 lepton cut: 0.00108752
+pass exactly 1 lepton cut: 0.000941042
+pass 200 MET cut: 0.000513731
+pass 2 b-jet cut: 0.00024353
+pass b-jets pt cut: 5.47462e-05
+pass aMT2 cut: 4.31762e-05
+pass close b-jet/MET: 3.29366e-05
+pass mbb cut: 3.12303e-05
+pass pT_lep / MET cut: 2.59404e-06
+pass pT_lep cut: 2.25264e-06
+ 
+total weighted event: 0.00218796
+pass at least 1 lepton cut: 0.00117835
+pass exactly 1 lepton cut: 0.00102011
+pass 200 MET cut: 0.000554595
+pass 2 b-jet cut: 0.000262392
+pass b-jets pt cut: 5.90118e-05
+pass aMT2 cut: 4.63839e-05
+pass close b-jet/MET: 3.52912e-05
+pass mbb cut: 3.34825e-05
+pass pT_lep / MET cut: 2.90115e-06
+pass pT_lep cut: 2.55975e-06
+ 
+total weighted event: 0.00235575
+pass at least 1 lepton cut: 0.00126809
+pass exactly 1 lepton cut: 0.00109873
+pass 200 MET cut: 0.000598187
+pass 2 b-jet cut: 0.000283336
+pass b-jets pt cut: 6.37187e-05
+pass aMT2 cut: 5.00673e-05
+pass close b-jet/MET: 3.79174e-05
+pass mbb cut: 3.60063e-05
+pass pT_lep / MET cut: 3.17401e-06
+pass pT_lep cut: 2.7985e-06
+ 
+total weighted event: 0.00252503
+pass at least 1 lepton cut: 0.00135787
+pass exactly 1 lepton cut: 0.00117681
+pass 200 MET cut: 0.000639801
+pass 2 b-jet cut: 0.000303887
+pass b-jets pt cut: 6.77462e-05
+pass aMT2 cut: 5.30709e-05
+pass close b-jet/MET: 3.98629e-05
+pass mbb cut: 3.77811e-05
+pass pT_lep / MET cut: 3.44705e-06
+pass pT_lep cut: 3.00328e-06
+ 
+total weighted event: 0.00269315
+pass at least 1 lepton cut: 0.00144659
+pass exactly 1 lepton cut: 0.00125417
+pass 200 MET cut: 0.00068193
+pass 2 b-jet cut: 0.000323893
+pass b-jets pt cut: 7.18096e-05
+pass aMT2 cut: 5.60758e-05
+pass close b-jet/MET: 4.18775e-05
+pass mbb cut: 3.97275e-05
+pass pT_lep / MET cut: 3.61778e-06
+pass pT_lep cut: 3.03743e-06
+ 
+total weighted event: 0.00286196
+pass at least 1 lepton cut: 0.00153948
+pass exactly 1 lepton cut: 0.00133443
+pass 200 MET cut: 0.000726314
+pass 2 b-jet cut: 0.000346238
+pass b-jets pt cut: 7.75156e-05
+pass aMT2 cut: 6.05517e-05
+pass close b-jet/MET: 4.52943e-05
+pass mbb cut: 4.29051e-05
+pass pT_lep / MET cut: 3.89112e-06
+pass pT_lep cut: 3.27661e-06
+ 
+total weighted event: 0.00303103
+pass at least 1 lepton cut: 0.00162915
+pass exactly 1 lepton cut: 0.00141097
+pass 200 MET cut: 0.000768985
+pass 2 b-jet cut: 0.000366602
+pass b-jets pt cut: 8.26684e-05
+pass aMT2 cut: 6.45102e-05
+pass close b-jet/MET: 4.81266e-05
+pass mbb cut: 4.56009e-05
+pass pT_lep / MET cut: 4.12999e-06
+pass pT_lep cut: 3.44723e-06
+ 
+total weighted event: 0.00319929
+pass at least 1 lepton cut: 0.00171791
+pass exactly 1 lepton cut: 0.00148833
+pass 200 MET cut: 0.000811558
+pass 2 b-jet cut: 0.000386659
+pass b-jets pt cut: 8.77252e-05
+pass aMT2 cut: 6.83028e-05
+pass close b-jet/MET: 5.10992e-05
+pass mbb cut: 4.84027e-05
+pass pT_lep / MET cut: 4.26666e-06
+pass pT_lep cut: 3.51556e-06
+ 
+total weighted event: 0.00336891
+pass at least 1 lepton cut: 0.00180772
+pass exactly 1 lepton cut: 0.00156648
+pass 200 MET cut: 0.000853035
+pass 2 b-jet cut: 0.000406476
+pass b-jets pt cut: 9.21254e-05
+pass aMT2 cut: 7.14409e-05
+pass close b-jet/MET: 5.33848e-05
+pass mbb cut: 5.05177e-05
+pass pT_lep / MET cut: 4.43722e-06
+pass pT_lep cut: 3.65201e-06
+ 
+total weighted event: 0.0035382
+pass at least 1 lepton cut: 0.00189917
+pass exactly 1 lepton cut: 0.0016467
+pass 200 MET cut: 0.00089677
+pass 2 b-jet cut: 0.000426909
+pass b-jets pt cut: 9.67371e-05
+pass aMT2 cut: 7.49253e-05
+pass close b-jet/MET: 5.60152e-05
+pass mbb cut: 5.29773e-05
+pass pT_lep / MET cut: 4.57387e-06
+pass pT_lep cut: 3.72033e-06
+ 
+total weighted event: 0.00370625
+pass at least 1 lepton cut: 0.00199108
+pass exactly 1 lepton cut: 0.00172604
+pass 200 MET cut: 0.00094009
+pass 2 b-jet cut: 0.000446897
+pass b-jets pt cut: 0.000101889
+pass aMT2 cut: 7.89169e-05
+pass close b-jet/MET: 5.89151e-05
+pass mbb cut: 5.57066e-05
+pass pT_lep / MET cut: 4.71034e-06
+pass pT_lep cut: 3.82269e-06
+ 
+total weighted event: 0.00387431
+pass at least 1 lepton cut: 0.00208018
+pass exactly 1 lepton cut: 0.00180327
+pass 200 MET cut: 0.000983
+pass 2 b-jet cut: 0.000467124
+pass b-jets pt cut: 0.000106527
+pass aMT2 cut: 8.24977e-05
+pass close b-jet/MET: 6.13361e-05
+pass mbb cut: 5.80594e-05
+pass pT_lep / MET cut: 4.81264e-06
+pass pT_lep cut: 3.85679e-06
+ 
+total weighted event: 0.00404218
+pass at least 1 lepton cut: 0.00217071
+pass exactly 1 lepton cut: 0.00188182
+pass 200 MET cut: 0.00102397
+pass 2 b-jet cut: 0.000486856
+pass b-jets pt cut: 0.000110795
+pass aMT2 cut: 8.58782e-05
+pass close b-jet/MET: 6.39995e-05
+pass mbb cut: 6.04158e-05
+pass pT_lep / MET cut: 4.81264e-06
+pass pT_lep cut: 3.89094e-06
+ 
+total weighted event: 0.00421011
+pass at least 1 lepton cut: 0.00226161
+pass exactly 1 lepton cut: 0.00196066
+pass 200 MET cut: 0.00106722
+pass 2 b-jet cut: 0.00050664
+pass b-jets pt cut: 0.000115331
+pass aMT2 cut: 8.92884e-05
+pass close b-jet/MET: 6.64208e-05
+pass mbb cut: 6.27347e-05
+pass pT_lep / MET cut: 5.01723e-06
+pass pT_lep cut: 4.09553e-06
+ 
+total weighted event: 0.00437722
+pass at least 1 lepton cut: 0.00235179
+pass exactly 1 lepton cut: 0.00203968
+pass 200 MET cut: 0.00110941
+pass 2 b-jet cut: 0.000526799
+pass b-jets pt cut: 0.000120007
+pass aMT2 cut: 9.28381e-05
+pass close b-jet/MET: 6.90831e-05
+pass mbb cut: 6.5158e-05
+pass pT_lep / MET cut: 5.15376e-06
+pass pT_lep cut: 4.16379e-06
+ 
+total weighted event: 0.00454487
+pass at least 1 lepton cut: 0.0024404
+pass exactly 1 lepton cut: 0.00211656
+pass 200 MET cut: 0.00115133
+pass 2 b-jet cut: 0.00054665
+pass b-jets pt cut: 0.000124684
+pass aMT2 cut: 9.64909e-05
+pass close b-jet/MET: 7.17118e-05
+pass mbb cut: 6.75477e-05
+pass pT_lep / MET cut: 5.46104e-06
+pass pT_lep cut: 4.50521e-06
+ 
+total weighted event: 0.0047126
+pass at least 1 lepton cut: 0.00252766
+pass exactly 1 lepton cut: 0.00219202
+pass 200 MET cut: 0.00119189
+pass 2 b-jet cut: 0.000565717
+pass b-jets pt cut: 0.000128947
+pass aMT2 cut: 9.96625e-05
+pass close b-jet/MET: 7.40648e-05
+pass mbb cut: 6.9628e-05
+pass pT_lep / MET cut: 5.59745e-06
+pass pT_lep cut: 4.64162e-06
+ 
+total weighted event: 0.00488032
+pass at least 1 lepton cut: 0.00261724
+pass exactly 1 lepton cut: 0.00226946
+pass 200 MET cut: 0.00123377
+pass 2 b-jet cut: 0.000586217
+pass b-jets pt cut: 0.000133959
+pass aMT2 cut: 0.000103516
+pass close b-jet/MET: 7.69976e-05
+pass mbb cut: 7.24244e-05
+pass pT_lep / MET cut: 5.83615e-06
+pass pT_lep cut: 4.81212e-06
+ 
+total weighted event: 0.00504872
+pass at least 1 lepton cut: 0.00270879
+pass exactly 1 lepton cut: 0.00234879
+pass 200 MET cut: 0.00127638
+pass 2 b-jet cut: 0.000607161
+pass b-jets pt cut: 0.00013918
+pass aMT2 cut: 0.000107576
+pass close b-jet/MET: 8.02729e-05
+pass mbb cut: 7.53243e-05
+pass pT_lep / MET cut: 6.1091e-06
+pass pT_lep cut: 4.98272e-06
+ 
+total weighted event: 0.00521672
+pass at least 1 lepton cut: 0.00280028
+pass exactly 1 lepton cut: 0.00242803
+pass 200 MET cut: 0.00131899
+pass 2 b-jet cut: 0.000627661
+pass b-jets pt cut: 0.000144203
+pass aMT2 cut: 0.000111574
+pass close b-jet/MET: 8.32796e-05
+pass mbb cut: 7.81602e-05
+pass pT_lep / MET cut: 6.41662e-06
+pass pT_lep cut: 5.29024e-06
+ 
+total weighted event: 0.00538389
+pass at least 1 lepton cut: 0.00289142
+pass exactly 1 lepton cut: 0.00250808
+pass 200 MET cut: 0.00136388
+pass 2 b-jet cut: 0.000648026
+pass b-jets pt cut: 0.00014878
+pass aMT2 cut: 0.000114852
+pass close b-jet/MET: 8.56699e-05
+pass mbb cut: 8.04822e-05
+pass pT_lep / MET cut: 6.62152e-06
+pass pT_lep cut: 5.49513e-06
+ 
+total weighted event: 0.00555101
+pass at least 1 lepton cut: 0.00298168
+pass exactly 1 lepton cut: 0.00258711
+pass 200 MET cut: 0.00140498
+pass 2 b-jet cut: 0.000668458
+pass b-jets pt cut: 0.000153322
+pass aMT2 cut: 0.000118574
+pass close b-jet/MET: 8.84357e-05
+pass mbb cut: 8.31797e-05
+pass pT_lep / MET cut: 6.79225e-06
+pass pT_lep cut: 5.63172e-06
+ 
+total weighted event: 0.00571866
+pass at least 1 lepton cut: 0.00307361
+pass exactly 1 lepton cut: 0.00266723
+pass 200 MET cut: 0.00144922
+pass 2 b-jet cut: 0.00068971
+pass b-jets pt cut: 0.000158274
+pass aMT2 cut: 0.000122535
+pass close b-jet/MET: 9.14412e-05
+pass mbb cut: 8.60144e-05
+pass pT_lep / MET cut: 6.96304e-06
+pass pT_lep cut: 5.73419e-06
+ 
+total weighted event: 0.00588604
+pass at least 1 lepton cut: 0.00316424
+pass exactly 1 lepton cut: 0.00274592
+pass 200 MET cut: 0.00149084
+pass 2 b-jet cut: 0.000709699
+pass b-jets pt cut: 0.000162547
+pass aMT2 cut: 0.000125783
+pass close b-jet/MET: 9.35942e-05
+pass mbb cut: 8.80308e-05
+pass pT_lep / MET cut: 7.13393e-06
+pass pT_lep cut: 5.80255e-06
+ 
+total weighted event: 0.00605404
+pass at least 1 lepton cut: 0.00325436
+pass exactly 1 lepton cut: 0.00282406
+pass 200 MET cut: 0.00153334
+pass 2 b-jet cut: 0.000731088
+pass b-jets pt cut: 0.000167533
+pass aMT2 cut: 0.000129505
+pass close b-jet/MET: 9.6224e-05
+pass mbb cut: 9.04898e-05
+pass pT_lep / MET cut: 7.44129e-06
+pass pT_lep cut: 6.04161e-06
+ 
+total weighted event: 0.00622176
+pass at least 1 lepton cut: 0.00334659
+pass exactly 1 lepton cut: 0.00290422
+pass 200 MET cut: 0.00157591
+pass 2 b-jet cut: 0.000752101
+pass b-jets pt cut: 0.000172245
+pass aMT2 cut: 0.000133124
+pass close b-jet/MET: 9.87844e-05
+pass mbb cut: 9.30161e-05
+pass pT_lep / MET cut: 7.74855e-06
+pass pT_lep cut: 6.31473e-06
+ 
+total weighted event: 0.00638914
+pass at least 1 lepton cut: 0.00343712
+pass exactly 1 lepton cut: 0.0029828
+pass 200 MET cut: 0.00161947
+pass 2 b-jet cut: 0.000772874
+pass b-jets pt cut: 0.000176612
+pass aMT2 cut: 0.000136639
+pass close b-jet/MET: 0.000101447
+pass mbb cut: 9.55759e-05
+pass pT_lep / MET cut: 7.91919e-06
+pass pT_lep cut: 6.38299e-06
+ 
+total weighted event: 0.00655714
+pass at least 1 lepton cut: 0.00352786
+pass exactly 1 lepton cut: 0.0030622
+pass 200 MET cut: 0.00166292
+pass 2 b-jet cut: 0.000794502
+pass b-jets pt cut: 0.000182214
+pass aMT2 cut: 0.000140532
+pass close b-jet/MET: 0.000104316
+pass mbb cut: 9.82741e-05
+pass pT_lep / MET cut: 8.05581e-06
+pass pT_lep cut: 6.4513e-06
+ 
+total weighted event: 0.00672568
+pass at least 1 lepton cut: 0.00361824
+pass exactly 1 lepton cut: 0.00313981
+pass 200 MET cut: 0.0017046
+pass 2 b-jet cut: 0.00081374
+pass b-jets pt cut: 0.000186339
+pass aMT2 cut: 0.000143771
+pass close b-jet/MET: 0.000106703
+pass mbb cut: 0.000100491
+pass pT_lep / MET cut: 8.22632e-06
+pass pT_lep cut: 6.5877e-06
+ 
+total weighted event: 0.0068936
+pass at least 1 lepton cut: 0.00370802
+pass exactly 1 lepton cut: 0.00321657
+pass 200 MET cut: 0.00174536
+pass 2 b-jet cut: 0.000833558
+pass b-jets pt cut: 0.000190398
+pass aMT2 cut: 0.000146705
+pass close b-jet/MET: 0.000108988
+pass mbb cut: 0.000102741
+pass pT_lep / MET cut: 8.49914e-06
+pass pT_lep cut: 6.72411e-06
+ 
+total weighted event: 0.0070618
+pass at least 1 lepton cut: 0.00379992
+pass exactly 1 lepton cut: 0.0032957
+pass 200 MET cut: 0.001788
+pass 2 b-jet cut: 0.000854298
+pass b-jets pt cut: 0.000196031
+pass aMT2 cut: 0.000151348
+pass close b-jet/MET: 0.000112606
+pass mbb cut: 0.000106121
+pass pT_lep / MET cut: 8.77225e-06
+pass pT_lep cut: 6.92895e-06
+ 
+total weighted event: 0.00722939
+pass at least 1 lepton cut: 0.00389079
+pass exactly 1 lepton cut: 0.00337462
+pass 200 MET cut: 0.00182965
+pass 2 b-jet cut: 0.000874047
+pass b-jets pt cut: 0.000200608
+pass aMT2 cut: 0.000155105
+pass close b-jet/MET: 0.00011527
+pass mbb cut: 0.000108717
+pass pT_lep / MET cut: 9.1479e-06
+pass pT_lep cut: 7.168e-06
+ 
+total weighted event: 0.00739677
+pass at least 1 lepton cut: 0.00398196
+pass exactly 1 lepton cut: 0.00345406
+pass 200 MET cut: 0.0018736
+pass 2 b-jet cut: 0.000894855
+pass b-jets pt cut: 0.000205598
+pass aMT2 cut: 0.000158454
+pass close b-jet/MET: 0.000117697
+pass mbb cut: 0.00011111
+pass pT_lep / MET cut: 9.35301e-06
+pass pT_lep cut: 7.30474e-06
+ 
+total weighted event: 0.00756443
+pass at least 1 lepton cut: 0.00407225
+pass exactly 1 lepton cut: 0.00353213
+pass 200 MET cut: 0.00191572
+pass 2 b-jet cut: 0.000915457
+pass b-jets pt cut: 0.000210853
+pass aMT2 cut: 0.000162345
+pass close b-jet/MET: 0.000120495
+pass mbb cut: 0.000113771
+pass pT_lep / MET cut: 9.5919e-06
+pass pT_lep cut: 7.44125e-06
+ 
+total weighted event: 0.00773263
+pass at least 1 lepton cut: 0.00416189
+pass exactly 1 lepton cut: 0.00360957
+pass 200 MET cut: 0.00195702
+pass 2 b-jet cut: 0.000935582
+pass b-jets pt cut: 0.000215252
+pass aMT2 cut: 0.000165891
+pass close b-jet/MET: 0.000123223
+pass mbb cut: 0.000116294
+pass pT_lep / MET cut: 9.83055e-06
+pass pT_lep cut: 7.64581e-06
+ 
+total weighted event: 0.00790169
+pass at least 1 lepton cut: 0.00425139
+pass exactly 1 lepton cut: 0.00368884
+pass 200 MET cut: 0.00200017
+pass 2 b-jet cut: 0.00095632
+pass b-jets pt cut: 0.000220031
+pass aMT2 cut: 0.000168929
+pass close b-jet/MET: 0.000125271
+pass mbb cut: 0.000118103
+pass pT_lep / MET cut: 9.93295e-06
+pass pT_lep cut: 7.74821e-06
+ 
+total weighted event: 0.00807178
+pass at least 1 lepton cut: 0.00434198
+pass exactly 1 lepton cut: 0.00376746
+pass 200 MET cut: 0.0020445
+pass 2 b-jet cut: 0.00097781
+pass b-jets pt cut: 0.000224736
+pass aMT2 cut: 0.000172372
+pass close b-jet/MET: 0.000127863
+pass mbb cut: 0.000120558
+pass pT_lep / MET cut: 1.01034e-05
+pass pT_lep cut: 7.85048e-06
+ 
+total weighted event: 0.00824152
+pass at least 1 lepton cut: 0.00443271
+pass exactly 1 lepton cut: 0.0038467
+pass 200 MET cut: 0.00208811
+pass 2 b-jet cut: 0.000997661
+pass b-jets pt cut: 0.000229106
+pass aMT2 cut: 0.000175616
+pass close b-jet/MET: 0.000130218
+pass mbb cut: 0.000122743
+pass pT_lep / MET cut: 1.03082e-05
+pass pT_lep cut: 7.98703e-06
+ 
+total weighted event: 0.00841127
+pass at least 1 lepton cut: 0.00452113
+pass exactly 1 lepton cut: 0.00392348
+pass 200 MET cut: 0.00212914
+pass 2 b-jet cut: 0.00101618
+pass b-jets pt cut: 0.00023303
+pass aMT2 cut: 0.00017855
+pass close b-jet/MET: 0.000132607
+pass mbb cut: 0.000124961
+pass pT_lep / MET cut: 1.05471e-05
+pass pT_lep cut: 8.12355e-06
+ 
+total weighted event: 0.0085815
+pass at least 1 lepton cut: 0.00460941
+pass exactly 1 lepton cut: 0.00400048
+pass 200 MET cut: 0.0021708
+pass 2 b-jet cut: 0.00103552
+pass b-jets pt cut: 0.0002375
+pass aMT2 cut: 0.000181895
+pass close b-jet/MET: 0.000135132
+pass mbb cut: 0.000127349
+pass pT_lep / MET cut: 1.07519e-05
+pass pT_lep cut: 8.22594e-06
+ 
+total weighted event: 0.00875152
+pass at least 1 lepton cut: 0.00469755
+pass exactly 1 lepton cut: 0.0040773
+pass 200 MET cut: 0.00221235
+pass 2 b-jet cut: 0.00105469
+pass b-jets pt cut: 0.000242039
+pass aMT2 cut: 0.00018558
+pass close b-jet/MET: 0.00013776
+pass mbb cut: 0.000129772
+pass pT_lep / MET cut: 1.08202e-05
+pass pT_lep cut: 8.26006e-06
+ 
+total weighted event: 0.00892167
+pass at least 1 lepton cut: 0.00478716
+pass exactly 1 lepton cut: 0.00415542
+pass 200 MET cut: 0.00225215
+pass 2 b-jet cut: 0.00107376
+pass b-jets pt cut: 0.000246514
+pass aMT2 cut: 0.000189064
+pass close b-jet/MET: 0.000140287
+pass mbb cut: 0.000132163
+pass pT_lep / MET cut: 1.11275e-05
+pass pT_lep cut: 8.56744e-06
+ 
+total weighted event: 0.00909273
+pass at least 1 lepton cut: 0.00487687
+pass exactly 1 lepton cut: 0.00423333
+pass 200 MET cut: 0.00229641
+pass 2 b-jet cut: 0.00109443
+pass b-jets pt cut: 0.000251392
+pass aMT2 cut: 0.000192954
+pass close b-jet/MET: 0.00014329
+pass mbb cut: 0.000134893
+pass pT_lep / MET cut: 1.13323e-05
+pass pT_lep cut: 8.70393e-06
+ 
+total weighted event: 0.00926275
+pass at least 1 lepton cut: 0.0049679
+pass exactly 1 lepton cut: 0.00431288
+pass 200 MET cut: 0.00234073
+pass 2 b-jet cut: 0.00111534
+pass b-jets pt cut: 0.000256205
+pass aMT2 cut: 0.000196503
+pass close b-jet/MET: 0.000145986
+pass mbb cut: 0.00013735
+pass pT_lep / MET cut: 1.15029e-05
+pass pT_lep cut: 8.87456e-06
+ 
+total weighted event: 0.00943325
+pass at least 1 lepton cut: 0.00505683
+pass exactly 1 lepton cut: 0.00439035
+pass 200 MET cut: 0.00238272
+pass 2 b-jet cut: 0.00113581
+pass b-jets pt cut: 0.00026075
+pass aMT2 cut: 0.000200534
+pass close b-jet/MET: 0.000149334
+pass mbb cut: 0.000140527
+pass pT_lep / MET cut: 1.17763e-05
+pass pT_lep cut: 9.07959e-06
+ 
+total weighted event: 0.00960348
+pass at least 1 lepton cut: 0.00514837
+pass exactly 1 lepton cut: 0.00446945
+pass 200 MET cut: 0.00242506
+pass 2 b-jet cut: 0.00115508
+pass b-jets pt cut: 0.000265119
+pass aMT2 cut: 0.000203574
+pass close b-jet/MET: 0.000151588
+pass mbb cut: 0.000142679
+pass pT_lep / MET cut: 1.20836e-05
+pass pT_lep cut: 9.31864e-06
+ 
+total weighted event: 0.00977398
+pass at least 1 lepton cut: 0.00523805
+pass exactly 1 lepton cut: 0.00454818
+pass 200 MET cut: 0.00246743
+pass 2 b-jet cut: 0.00117589
+pass b-jets pt cut: 0.000269489
+pass aMT2 cut: 0.000207024
+pass close b-jet/MET: 0.000154457
+pass mbb cut: 0.000145445
+pass pT_lep / MET cut: 1.22885e-05
+pass pT_lep cut: 9.42108e-06
+ 
+total weighted event: 0.00994469
+pass at least 1 lepton cut: 0.00532772
+pass exactly 1 lepton cut: 0.00462657
+pass 200 MET cut: 0.00250989
+pass 2 b-jet cut: 0.00119611
+pass b-jets pt cut: 0.000273889
+pass aMT2 cut: 0.000210435
+pass close b-jet/MET: 0.000156879
+pass mbb cut: 0.000147799
+pass pT_lep / MET cut: 1.26637e-05
+pass pT_lep cut: 9.76214e-06
+ 
+total weighted event: 0.0101149
+pass at least 1 lepton cut: 0.0054193
+pass exactly 1 lepton cut: 0.00470615
+pass 200 MET cut: 0.00255435
+pass 2 b-jet cut: 0.00121644
+pass b-jets pt cut: 0.000278874
+pass aMT2 cut: 0.000214122
+pass close b-jet/MET: 0.000159508
+pass mbb cut: 0.000150325
+pass pT_lep / MET cut: 1.29026e-05
+pass pT_lep cut: 9.86455e-06
+ 
+total weighted event: 0.0102851
+pass at least 1 lepton cut: 0.00550989
+pass exactly 1 lepton cut: 0.00478491
+pass 200 MET cut: 0.00259624
+pass 2 b-jet cut: 0.00123551
+pass b-jets pt cut: 0.000283414
+pass aMT2 cut: 0.000217911
+pass close b-jet/MET: 0.000162273
+pass mbb cut: 0.000152852
+pass pT_lep / MET cut: 1.31416e-05
+pass pT_lep cut: 1.00694e-05
+ 
+total weighted event: 0.0104548
+pass at least 1 lepton cut: 0.00559936
+pass exactly 1 lepton cut: 0.00486214
+pass 200 MET cut: 0.00263896
+pass 2 b-jet cut: 0.00125536
+pass b-jets pt cut: 0.000288091
+pass aMT2 cut: 0.000221359
+pass close b-jet/MET: 0.000164867
+pass mbb cut: 0.000155275
+pass pT_lep / MET cut: 1.33806e-05
+pass pT_lep cut: 1.02743e-05
+ 
+total weighted event: 0.0106251
+pass at least 1 lepton cut: 0.00568924
+pass exactly 1 lepton cut: 0.00494032
+pass 200 MET cut: 0.00268256
+pass 2 b-jet cut: 0.00127549
+pass b-jets pt cut: 0.000292499
+pass aMT2 cut: 0.000224706
+pass close b-jet/MET: 0.000167258
+pass mbb cut: 0.00015753
+pass pT_lep / MET cut: 1.35856e-05
+pass pT_lep cut: 1.04451e-05
+ 
+total weighted event: 0.0107952
+pass at least 1 lepton cut: 0.00577919
+pass exactly 1 lepton cut: 0.00501878
+pass 200 MET cut: 0.002724
+pass 2 b-jet cut: 0.00129517
+pass b-jets pt cut: 0.000297683
+pass aMT2 cut: 0.000228388
+pass close b-jet/MET: 0.000169849
+pass mbb cut: 0.000159984
+pass pT_lep / MET cut: 1.38243e-05
+pass pT_lep cut: 1.06837e-05
+ 
+total weighted event: 0.0109645
+pass at least 1 lepton cut: 0.00586872
+pass exactly 1 lepton cut: 0.00509639
+pass 200 MET cut: 0.00276685
+pass 2 b-jet cut: 0.0013155
+pass b-jets pt cut: 0.000302565
+pass aMT2 cut: 0.000232075
+pass close b-jet/MET: 0.000172615
+pass mbb cut: 0.000162579
+pass pT_lep / MET cut: 1.42339e-05
+pass pT_lep cut: 1.09568e-05
+ 
+total weighted event: 0.0111342
+pass at least 1 lepton cut: 0.00595976
+pass exactly 1 lepton cut: 0.00517569
+pass 200 MET cut: 0.00281128
+pass 2 b-jet cut: 0.0013376
+pass b-jets pt cut: 0.00030752
+pass aMT2 cut: 0.000235832
+pass close b-jet/MET: 0.000175415
+pass mbb cut: 0.000165243
+pass pT_lep / MET cut: 1.44047e-05
+pass pT_lep cut: 1.10934e-05
+ 
+total weighted event: 0.0113039
+pass at least 1 lepton cut: 0.00604698
+pass exactly 1 lepton cut: 0.0052513
+pass 200 MET cut: 0.00285269
+pass 2 b-jet cut: 0.00135721
+pass b-jets pt cut: 0.000311753
+pass aMT2 cut: 0.000239077
+pass close b-jet/MET: 0.000177669
+pass mbb cut: 0.000167395
+pass pT_lep / MET cut: 1.46779e-05
+pass pT_lep cut: 1.12983e-05
+ 
+total weighted event: 0.0114736
+pass at least 1 lepton cut: 0.00613697
+pass exactly 1 lepton cut: 0.00532917
+pass 200 MET cut: 0.00289664
+pass 2 b-jet cut: 0.00137805
+pass b-jets pt cut: 0.000316327
+pass aMT2 cut: 0.000242593
+pass close b-jet/MET: 0.000180196
+pass mbb cut: 0.000169818
+pass pT_lep / MET cut: 1.49852e-05
+pass pT_lep cut: 1.14691e-05
+ 
+total weighted event: 0.0116437
+pass at least 1 lepton cut: 0.00622817
+pass exactly 1 lepton cut: 0.00540729
+pass 200 MET cut: 0.00294021
+pass 2 b-jet cut: 0.00139958
+pass b-jets pt cut: 0.000320834
+pass aMT2 cut: 0.000245939
+pass close b-jet/MET: 0.000182347
+pass mbb cut: 0.000171833
+pass pT_lep / MET cut: 1.519e-05
+pass pT_lep cut: 1.16056e-05
+ 
+total weighted event: 0.0118137
+pass at least 1 lepton cut: 0.00631849
+pass exactly 1 lepton cut: 0.00548524
+pass 200 MET cut: 0.002982
+pass 2 b-jet cut: 0.00141874
+pass b-jets pt cut: 0.000324968
+pass aMT2 cut: 0.00024898
+pass close b-jet/MET: 0.000184364
+pass mbb cut: 0.000173816
+pass pT_lep / MET cut: 1.55318e-05
+pass pT_lep cut: 1.19474e-05
+ 
+total weighted event: 0.0119836
+pass at least 1 lepton cut: 0.00640895
+pass exactly 1 lepton cut: 0.00556397
+pass 200 MET cut: 0.00302485
+pass 2 b-jet cut: 0.00144013
+pass b-jets pt cut: 0.000330332
+pass aMT2 cut: 0.000253046
+pass close b-jet/MET: 0.00018713
+pass mbb cut: 0.000176446
+pass pT_lep / MET cut: 1.59075e-05
+pass pT_lep cut: 1.22548e-05
+ 
+total weighted event: 0.0121541
+pass at least 1 lepton cut: 0.00649995
+pass exactly 1 lepton cut: 0.00564392
+pass 200 MET cut: 0.00306855
+pass 2 b-jet cut: 0.00146063
+pass b-jets pt cut: 0.000335731
+pass aMT2 cut: 0.000256873
+pass close b-jet/MET: 0.000189931
+pass mbb cut: 0.000179212
+pass pT_lep / MET cut: 1.61466e-05
+pass pT_lep cut: 1.24256e-05
+ 
+total weighted event: 0.0123239
+pass at least 1 lepton cut: 0.00659016
+pass exactly 1 lepton cut: 0.0057221
+pass 200 MET cut: 0.00311185
+pass 2 b-jet cut: 0.00148079
+pass b-jets pt cut: 0.000339759
+pass aMT2 cut: 0.000259843
+pass close b-jet/MET: 0.000192252
+pass mbb cut: 0.000181397
+pass pT_lep / MET cut: 1.64197e-05
+pass pT_lep cut: 1.25963e-05
+ 
+total weighted event: 0.012494
+pass at least 1 lepton cut: 0.00667967
+pass exactly 1 lepton cut: 0.00579991
+pass 200 MET cut: 0.00315299
+pass 2 b-jet cut: 0.0015004
+pass b-jets pt cut: 0.000343719
+pass aMT2 cut: 0.000262916
+pass close b-jet/MET: 0.000194574
+pass mbb cut: 0.000183514
+pass pT_lep / MET cut: 1.65563e-05
+pass pT_lep cut: 1.26987e-05
+ 
+total weighted event: 0.0126644
+pass at least 1 lepton cut: 0.00676944
+pass exactly 1 lepton cut: 0.00587837
+pass 200 MET cut: 0.00319704
+pass 2 b-jet cut: 0.00152199
+pass b-jets pt cut: 0.0003489
+pass aMT2 cut: 0.000266869
+pass close b-jet/MET: 0.000197506
+pass mbb cut: 0.000186275
+pass pT_lep / MET cut: 1.67268e-05
+pass pT_lep cut: 1.29033e-05
+ 
+total weighted event: 0.0128341
+pass at least 1 lepton cut: 0.00685735
+pass exactly 1 lepton cut: 0.00595434
+pass 200 MET cut: 0.00323829
+pass 2 b-jet cut: 0.00154127
+pass b-jets pt cut: 0.000353508
+pass aMT2 cut: 0.000270385
+pass close b-jet/MET: 0.0002001
+pass mbb cut: 0.000188835
+pass pT_lep / MET cut: 1.68974e-05
+pass pT_lep cut: 1.29715e-05
+ 
+total weighted event: 0.0130038
+pass at least 1 lepton cut: 0.00694689
+pass exactly 1 lepton cut: 0.00603093
+pass 200 MET cut: 0.00328069
+pass 2 b-jet cut: 0.00156204
+pass b-jets pt cut: 0.000358151
+pass aMT2 cut: 0.000274106
+pass close b-jet/MET: 0.000202762
+pass mbb cut: 0.000191429
+pass pT_lep / MET cut: 1.72046e-05
+pass pT_lep cut: 1.31422e-05
+ 
+total weighted event: 0.0131737
+pass at least 1 lepton cut: 0.00703694
+pass exactly 1 lepton cut: 0.00610912
+pass 200 MET cut: 0.00332443
+pass 2 b-jet cut: 0.00158367
+pass b-jets pt cut: 0.000363413
+pass aMT2 cut: 0.000278172
+pass close b-jet/MET: 0.000205393
+pass mbb cut: 0.000193855
+pass pT_lep / MET cut: 1.74097e-05
+pass pT_lep cut: 1.33131e-05
+ 
+total weighted event: 0.0133445
+pass at least 1 lepton cut: 0.00712634
+pass exactly 1 lepton cut: 0.00618744
+pass 200 MET cut: 0.00336848
+pass 2 b-jet cut: 0.00160492
+pass b-jets pt cut: 0.000368231
+pass aMT2 cut: 0.000281794
+pass close b-jet/MET: 0.000207784
+pass mbb cut: 0.000196144
+pass pT_lep / MET cut: 1.75463e-05
+pass pT_lep cut: 1.34156e-05
+ 
+total weighted event: 0.0135149
+pass at least 1 lepton cut: 0.00721765
+pass exactly 1 lepton cut: 0.00626718
+pass 200 MET cut: 0.00341082
+pass 2 b-jet cut: 0.00162552
+pass b-jets pt cut: 0.000372805
+pass aMT2 cut: 0.000285447
+pass close b-jet/MET: 0.000210379
+pass mbb cut: 0.00019867
+pass pT_lep / MET cut: 1.78195e-05
+pass pT_lep cut: 1.36204e-05
+ 
+total weighted event: 0.0136851
+pass at least 1 lepton cut: 0.0073078
+pass exactly 1 lepton cut: 0.00634527
+pass 200 MET cut: 0.00345384
+pass 2 b-jet cut: 0.0016452
+pass b-jets pt cut: 0.00037799
+pass aMT2 cut: 0.000289131
+pass close b-jet/MET: 0.000212732
+pass mbb cut: 0.000200955
+pass pT_lep / MET cut: 1.79559e-05
+pass pT_lep cut: 1.37227e-05
+ 
+total weighted event: 0.0138549
+pass at least 1 lepton cut: 0.00739931
+pass exactly 1 lepton cut: 0.00642515
+pass 200 MET cut: 0.00349504
+pass 2 b-jet cut: 0.00166512
+pass b-jets pt cut: 0.000382727
+pass aMT2 cut: 0.000292812
+pass close b-jet/MET: 0.000215733
+pass mbb cut: 0.000203785
+pass pT_lep / MET cut: 1.81604e-05
+pass pT_lep cut: 1.38591e-05
+ 
+total weighted event: 0.0140248
+pass at least 1 lepton cut: 0.00748915
+pass exactly 1 lepton cut: 0.00650211
+pass 200 MET cut: 0.00353735
+pass 2 b-jet cut: 0.00168661
+pass b-jets pt cut: 0.000388292
+pass aMT2 cut: 0.00029742
+pass close b-jet/MET: 0.000219249
+pass mbb cut: 0.000207062
+pass pT_lep / MET cut: 1.83653e-05
+pass pT_lep cut: 1.40298e-05
+ 
+total weighted event: 0.0141947
+pass at least 1 lepton cut: 0.00757774
+pass exactly 1 lepton cut: 0.00657914
+pass 200 MET cut: 0.00357777
+pass 2 b-jet cut: 0.00170606
+pass b-jets pt cut: 0.000392662
+pass aMT2 cut: 0.000300902
+pass close b-jet/MET: 0.000221912
+pass mbb cut: 0.000209452
+pass pT_lep / MET cut: 1.86043e-05
+pass pT_lep cut: 1.42689e-05
+ 
+total weighted event: 0.0143649
+pass at least 1 lepton cut: 0.00766846
+pass exactly 1 lepton cut: 0.00665777
+pass 200 MET cut: 0.00362171
+pass 2 b-jet cut: 0.00172738
+pass b-jets pt cut: 0.000397313
+pass aMT2 cut: 0.000304356
+pass close b-jet/MET: 0.000224578
+pass mbb cut: 0.000211982
+pass pT_lep / MET cut: 1.89462e-05
+pass pT_lep cut: 1.46107e-05
+ 
+total weighted event: 0.0145349
+pass at least 1 lepton cut: 0.00775851
+pass exactly 1 lepton cut: 0.00673469
+pass 200 MET cut: 0.00366337
+pass 2 b-jet cut: 0.00174689
+pass b-jets pt cut: 0.000401614
+pass aMT2 cut: 0.000307838
+pass close b-jet/MET: 0.000226933
+pass mbb cut: 0.000214132
+pass pT_lep / MET cut: 1.92535e-05
+pass pT_lep cut: 1.48839e-05
+ 
+total weighted event: 0.0147046
+pass at least 1 lepton cut: 0.00784843
+pass exactly 1 lepton cut: 0.00681155
+pass 200 MET cut: 0.00370523
+pass 2 b-jet cut: 0.00176715
+pass b-jets pt cut: 0.00040609
+pass aMT2 cut: 0.000311084
+pass close b-jet/MET: 0.000229324
+pass mbb cut: 0.000216284
+pass pT_lep / MET cut: 1.93901e-05
+pass pT_lep cut: 1.49522e-05
+ 
+total weighted event: 0.0148747
+pass at least 1 lepton cut: 0.00793965
+pass exactly 1 lepton cut: 0.00688943
+pass 200 MET cut: 0.0037478
+pass 2 b-jet cut: 0.00178823
+pass b-jets pt cut: 0.000410596
+pass aMT2 cut: 0.000314532
+pass close b-jet/MET: 0.000232021
+pass mbb cut: 0.000218844
+pass pT_lep / MET cut: 1.96291e-05
+pass pT_lep cut: 1.51912e-05
+ 
+total weighted event: 0.015045
+pass at least 1 lepton cut: 0.00803107
+pass exactly 1 lepton cut: 0.00696918
+pass 200 MET cut: 0.00379336
+pass 2 b-jet cut: 0.00181006
+pass b-jets pt cut: 0.000415956
+pass aMT2 cut: 0.000318561
+pass close b-jet/MET: 0.000234922
+pass mbb cut: 0.000221574
+pass pT_lep / MET cut: 1.9868e-05
+pass pT_lep cut: 1.53618e-05
+ 
+total weighted event: 0.0152151
+pass at least 1 lepton cut: 0.00812114
+pass exactly 1 lepton cut: 0.00704634
+pass 200 MET cut: 0.00383638
+pass 2 b-jet cut: 0.00182995
+pass b-jets pt cut: 0.000420535
+pass aMT2 cut: 0.000322251
+pass close b-jet/MET: 0.00023745
+pass mbb cut: 0.000223932
+pass pT_lep / MET cut: 2.00389e-05
+pass pT_lep cut: 1.54643e-05
+ 
+worker finished:
+Real time 0:09:51, CP time 380.810
+xAOD::TFileAccessTracer   INFO    Sending file access statistics to http://rucio-lb-prod.cern.ch:18762/traces/

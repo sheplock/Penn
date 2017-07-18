@@ -1,0 +1,136 @@
+{
+  "argValues": {
+    "athenaopts": [
+      "--preloadlib=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64/libintlc.so.5:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64/libimf.so"
+    ], 
+    "ecmEnergy": 13000.0, 
+    "firstEvent": 1, 
+    "jobConfig": {
+      "all": [
+        "MC15.387632.MGPy8EG_A14N_TT_onestepBB_800_170_169.py"
+      ]
+    }, 
+    "maxEvents": {
+      "all": 5000
+    }, 
+    "outputEVNTFile": [
+      "test2.EVNT.pool.root"
+    ], 
+    "printEvts": 5, 
+    "randomSeed": {
+      "all": 1
+    }, 
+    "runNumber": 387632
+  }, 
+  "cmdLine": "'/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.4/InstallArea/share/bin/Generate_tf.py' '--ecmEnergy' '13000' '--firstEvent' '1' '--randomSeed' '1' '--jobConfig' 'MC15.387632.MGPy8EG_A14N_TT_onestepBB_800_170_169.py' '--outputEVNTFile' 'test2.EVNT.pool.root' '--runNumber' '387632' '--maxEvents' '5000'", 
+  "created": "2016-08-23T16:51:00", 
+  "executor": [
+    {
+      "asetup": null, 
+      "errMsg": "", 
+      "exeConfig": {
+        "outputs": [
+          "EVNT"
+        ], 
+        "script": "athena.py", 
+        "substep": null
+      }, 
+      "logfileReport": {
+        "countSummary": {
+          "CRITICAL": 0, 
+          "DEBUG": 0, 
+          "ERROR": 0, 
+          "FATAL": 0, 
+          "IGNORED": 0, 
+          "INFO": 1462, 
+          "UNKNOWN": 47959, 
+          "VERBOSE": 0, 
+          "WARNING": 508
+        }, 
+        "details": {}
+      }, 
+      "metaData": {
+        "GenFiltEff": "1.000000e+00", 
+        "contactPhysicist": "takashi.yamanaka@cern.ch", 
+        "cross-section (nb)": "2.436e-05", 
+        "genFilterNames": "", 
+        "generator": "Pythia 8.186", 
+        "generatorName": "MadGraph+Pythia8+EvtGen", 
+        "generatorTune": "A14 NNPDF23LO", 
+        "keywords": "susy, simplifiedmodel", 
+        "physicsComment": "stop direct pair production, st->b+chargino in simplified model", 
+        "specialConfig": "NONE"
+      }, 
+      "name": "generate", 
+      "rc": 0, 
+      "statusOK": true, 
+      "validation": true
+    }
+  ], 
+  "exitAcronym": "OK", 
+  "exitCode": 0, 
+  "exitMsg": "OK", 
+  "exitMsgExtra": "", 
+  "files": {
+    "input": [], 
+    "output": [
+      {
+        "argName": "outputEVNTFile", 
+        "dataset": null, 
+        "subFiles": [
+          {
+            "AODFixVersion": "", 
+            "beam_energy": [
+              6500000.0
+            ], 
+            "beam_type": [
+              "collisions"
+            ], 
+            "conditions_tag": null, 
+            "file_guid": "2918AF94-EB39-A247-82FE-712E283B05D6", 
+            "file_size": 194779830, 
+            "file_type": "pool", 
+            "geometry": null, 
+            "integrity": true, 
+            "lumi_block": [
+              0
+            ], 
+            "name": "test2.EVNT.pool.root", 
+            "nentries": 5000, 
+            "run_number": [
+              387632
+            ]
+          }
+        ], 
+        "type": "EVNT"
+      }
+    ]
+  }, 
+  "name": "Generate_tf", 
+  "reportVersion": "1.0.1", 
+  "resource": {
+    "executor": {
+      "generate": {
+        "cpuTime": 3555, 
+        "wallTime": 3663
+      }
+    }, 
+    "machine": {
+      "cpu_family": "6", 
+      "linux_distribution": [
+        "Scientific Linux", 
+        "6.8", 
+        "Carbon"
+      ], 
+      "model": "26", 
+      "model_name": "Intel(R) Xeon(R) CPU           X5570  @ 2.93GHz", 
+      "node": "at3i00.hep.upenn.edu", 
+      "platform": "Linux-2.6.32-573.12.1.el6.x86_64-x86_64-with-redhat-6.8-Carbon"
+    }, 
+    "transform": {
+      "cpuTime": 11, 
+      "externalCpuTime": 7, 
+      "wallTime": 3683
+    }
+  }
+}

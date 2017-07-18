@@ -1,0 +1,214 @@
+2016-01-25 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* updated EL::StatusCode to work with ANA_CHECK
+	* going into EventLoop-00-01-35
+
+2016-01-22 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added some performance monitoring to the worker
+	* going into EventLoop-00-01-34
+
+2015-10-28 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* removed a spurious print-out from the last commit
+	* fixed a compiler warning
+	* going into EventLoop-00-01-33
+
+2015-10-28 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed a bug in accounting events processed
+	* going into EventLoop-00-01-32
+
+2015-10-27 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a fix to process empty files in proof
+	* going into EventLoop-00-01-31
+
+2015-10-07 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed a problem/typo in el_wait/el_retrieve
+	* going into EventLoop-00-01-30
+
+2015-10-07 Karol Krizka <kkrizka@cern.ch>
+	* fixed Condor non-shared filesystem driver looking for segments file in wrong location
+
+2015-10-06 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed the wait.C and retrieve.C macros and added wrapper scripts
+	  for them
+	* going into EventLoop-00-01-29
+
+2015-10-05 Karol Krizka <kkrizka@cern.ch>
+	* fixed missing error streams in condor logs
+
+2015-10-03 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* introduced some more fixes for the condor driver
+	* going into EventLoop-00-01-28
+
+2015-10-01 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a test for running PROOF-lite from a macro and fixed the
+	  issues that I found
+	* going into EventLoop-00-01-27
+
+2015-10-01 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed the PROOF ut
+	* going into EventLoop-00-01-26
+
+2015-09-29 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed the batch driver problem introduced in one of the last
+	  commits
+	* going into EventLoop-00-01-25
+
+2015-09-29 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed the warnings I inadvertently introduced on linux while
+	  fixing them on MacOS
+	* going into EventLoop-00-01-24
+
+2015-09-29 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed all the warnings with the latest version of MacOS
+	* fixed a compilation error on MacOS
+	* going into EventLoop-00-01-23
+
+2015-09-20 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed a problem in compiling without AsgTools
+	* going into EventLoop-00-01-22
+
+2015-08-18 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added override attributes to all virtual functions (in trying to
+	  debug some problem)
+	* going into EventLoop-00-01-20
+
+2015-08-13 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a new mechanism to try opening a file multiple times (in
+	  case of spurious failures)
+	* going into EventLoop-00-01-19
+
+2015-08-05 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* changed the default message level to INFO
+	* fixed two compiler warnings about deprecated function usage
+	* going into EventLoop-00-01-18
+
+2015-08-04 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a test that we can indeed set the message level
+	* going into EventLoop-00-01-17
+
+2015-08-04 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added support for AsgTools messaging
+	* going into EventLoop-00-01-16
+
+2015-07-16 Shuwei Ye <yesw@bnl.gov>
+        * Root/ProofDriver.cxx
+          - Set "PROOF_INITCMD" to set up right env for Proof and PoD
+            using "source rcSetup.sh -P".
+          - Set 2 timeout parameters to allow more time to set up env on
+            Proof workers.
+          - Added option not to EnablePackage on client
+        * going into EventLoop-00-01-15
+
+2015-06-15 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* improved the error handling in the background driver and verified
+	  that it works on lxplus with 1.X.Y releases
+	* going into EventLoop-00-01-14
+
+2015-06-14 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* made a basic driver/worker for running the worker in a background
+	  process, connected via IPC
+	* going into EventLoop-00-01-14
+
+2015-06-03 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* updated TEventSvc to handle files without a TTree (fix provided
+	  by Attila)
+	* going into EventLoop-00-01-12
+
+2015-06-02 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* did the updates to handle n-tuple files without a TTree
+	* going into EventLoop-00-01-11
+
+2015-06-01 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a getOutputFileNull method to allow for optional output
+	  files
+	* going into EventLoop-00-01-10
+
+2015-06-01 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* rewrote the Worker state machine, and fixed it so that
+	  fileExecute gets called after histInitialize
+	* going into EventLoop-00-01-09
+
+2015-05-12 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a book/fill routine to the Algorithm base class to match
+	  the Athena mechanism
+	* going into EventLoop-00-01-08
+
+2015-04-25 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added (untested) support for using TEvent in fileExecute()
+	* added a check in the unit test to verify that changeInput gets
+	  called correctly
+	* going into EventLoop-00-01-07
+
+2015-03-01 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a Job::algsAddClone method to allow adding a clone of an
+	  algorithm instead of the algorithm itself
+	* going into EventLoop-00-01-06
+
+2015-02-09 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* introduced some fixes to the LSFDriver to make it work on lxbatch
+	* going into EventLoop-00-01-05
+
+2015-02-03 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a SoGE driver submitted by Dennis Sperlich
+	* going into EventLoop-00-01-04
+
+2015-02-03 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added an extra include to StatusCode to the Algorithm header
+	  file.  while not strictly necessary, it makes life easier for
+	  users of the Algorithm class.
+	* going into EventLoop-00-01-03
+
+2014-11-17 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* disabled the metrics, as they seem to be breaking the unit tests
+	  for DirectDriver and ProofDriver
+	* going into EventLoop-00-01-00
+
+2014-11-17 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed the issues with the BatchDriver and root 6
+	* going into EventLoop-00-00-99
+
+2014-10-23 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added an option to print cache statistics at the end of each file
+	* going into EventLoop-00-00-98
+
+2014-10-08 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added the option to generate a ReadStats object when running over
+	  xAODs.
+	* going into EventLoop-00-00-97
+
+2014-09-29 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* introduced a short cut to access the trigger config from the
+	  input file
+	* going into EventLoop-00-00-96
+
+2014-09-29 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* fixed a memory leak reported by Velt Sharf
+	* going into EventLoop-00-00-95
+
+2014-08-28 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added a TStore to the xAOD access to prevent CP tools from
+	  crashing when using evtStore()
+	* going into EventLoop-00-00-94
+
+2014-07-23 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added an option to silently overwrite the submission target
+	  directory
+	* going into EventLoop-00-00-93
+
+2014-06-26 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* checked all the return codes from xAOD::TEvent
+	* going into EventLoop-00-00-92
+
+2014-06-26 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* made one more change to make the source code even more clear for
+	  people like Attila
+	* going into EventLoop-00-00-91
+
+2014-06-26 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* made some cosmetic changes to the source code on request of
+	  Attila
+	* going into EventLoop-00-00-90
+
+2014-06-26 Nils Krumnack <Nils.Erik.Krumnack@cern.ch>
+	* added an option to switch between branch and class access mode
+	  for xAODs
+	* going into EventLoop-00-00-89

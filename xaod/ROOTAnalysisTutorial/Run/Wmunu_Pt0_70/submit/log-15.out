@@ -1,0 +1,1283 @@
+starting batch job initialization
+batch job user initialization finished
+at3f13.hep.upenn.edu
+/home/shepj/xaod/ROOTAnalysisTutorial/Run/Wmunu_Pt0_70_weights
+shepj
+
+Processing /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/RootCore/scripts/load_packages.C...
+xAOD::Init                INFO    Environment initialised for data access
+Processing /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/RootCore/scripts/load_packages.C...
+load_packages.C already run, not running again
+Processing /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/user_scripts/EventLoop/batch_worker.C(15,"/home/shepj/xaod/ROOTAnalysisTutorial/Run/Wmunu_Pt0_70_weights/submit/config.root")...
+/var/lib/condor/execute/dir_5760/EventLoop-Worker-mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375-15-1472477327-5761
+Processing File file:///disk/userdata00/atlas_data2/shepj/mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375//DAOD_TRUTH1.05969333._000013.pool.root.1
+Hostname is at3f13.hep.upenn.edu
+the metadata had for veto directory: 
+output
+tempdir
+Old file name is /disk/userdata00/atlas_data2/shepj/mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375//DAOD_TRUTH1.05969333._000013.pool.root.1
+New file name is _disk_userdata00_atlas_data2_shepj_mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375__DAOD_TRUTH1.05969333._000013.pool.root.1
+Job location: /home/shepj/xaod/ROOTAnalysisTutorial/Run/Wmunu_Pt0_70_weights
+Veto directory: /home/shepj/xaod/ROOTAnalysisTutorial/Run/Wmunu_Pt0_70_weights/veto
+Transfer begin for _disk_userdata00_atlas_data2_shepj_mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375__DAOD_TRUTH1.05969333._000013.pool.root.1
+cp /disk/userdata00/atlas_data2/shepj/mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375//DAOD_TRUTH1.05969333._000013.pool.root.1 tempdir/_disk_userdata00_atlas_data2_shepj_mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375__DAOD_TRUTH1.05969333._000013.pool.root.1
+Transfer end. xrd command result: 
+Checking that file exists tempdir/_disk_userdata00_atlas_data2_shepj_mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375__DAOD_TRUTH1.05969333._000013.pool.root.1
+File exists: tempdir/_disk_userdata00_atlas_data2_shepj_mc15_13TeV.361326.Sherpa_CT10_Wmunu_Pt0_70_BFilter.merge.DAOD_TRUTH1.e3651_p2375__DAOD_TRUTH1.05969333._000013.pool.root.1
+Breaking out of queue after this many tries: 1
+MyxAODAnalysis::initia... INFO    Number of events = 420000
+TInterpreter::AutoParse   ERROR   Error parsing payload code for class xAOD::MissingETAuxContainer_v1 with content:
+
+
+#ifndef G__VECTOR_HAS_CLASS_ITERATOR
+  #define G__VECTOR_HAS_CLASS_ITERATOR 1
+#endif
+#ifndef ROOTCORE
+  #define ROOTCORE 1
+#endif
+#ifndef ROOTCORE_RELEASE_SERIES
+  #define ROOTCORE_RELEASE_SERIES 23
+#endif
+#ifndef ROOTCORE_TEST_FILE
+  #define ROOTCORE_TEST_FILE "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef ROOTCORE_TEST_DATA
+  #define ROOTCORE_TEST_DATA "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630"
+#endif
+#ifndef ASG_TEST_FILE_DATA
+  #define ASG_TEST_FILE_DATA "/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1"
+#endif
+#ifndef ASG_TEST_FILE_MC
+  #define ASG_TEST_FILE_MC "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef XAOD_STANDALONE
+  #define XAOD_STANDALONE 1
+#endif
+#ifndef XAOD_ANALYSIS
+  #define XAOD_ANALYSIS 1
+#endif
+#ifndef ROOTCORE_PACKAGE
+  #define ROOTCORE_PACKAGE "xAODMissingET"
+#endif
+
+#define _BACKWARD_BACKWARD_WARNING_H
+// Dear emacs, this is -*- c++ -*-
+// $Id: xAODMissingETDict.h 662681 2015-04-23 18:04:34Z khoo $
+#ifndef XAODMISSINGET_XAODMISSINGETDICT_H
+#define XAODMISSINGET_XAODMISSINGETDICT_H
+
+// Needed to successfully generate the dictionary in standalone mode:
+#if defined(__GCCXML__) and not defined(EIGEN_DONT_VECTORIZE)
+#   define EIGEN_DONT_VECTORIZE
+#endif // __GCCXML__
+
+// System include(s):
+#include <vector>
+
+// EDM include(s):
+#include "AthLinks/DataLink.h"
+#include "AthLinks/ElementLink.h"
+
+// Local include(s):
+#include "xAODMissingET/MissingETContainer.h"
+#include "xAODMissingET/MissingETAuxContainer.h"
+#include "xAODMissingET/MissingETComponentMap.h"
+#include "xAODMissingET/MissingETAuxComponentMap.h"
+#include "xAODMissingET/MissingETAssociationMap.h"
+#include "xAODMissingET/MissingETAuxAssociationMap.h"
+#include "xAODMissingET/versions/MissingETBase.h"
+
+namespace {
+   struct GCCXML_DUMMY_INSTANTIATION_XAODMISSINGET {
+      // Container(s):
+      DataVector< xAOD::MissingET_v1 > c1;
+      xAOD::MissingETContainer_v1 c2;
+      DataVector< xAOD::MissingETComponent_v1 > c3;
+      xAOD::MissingETComponentMap_v1 c4;
+      DataVector< xAOD::MissingETAssociation_v1 > c5;
+      xAOD::MissingETAssociationMap_v1 c6;
+      // Smart pointer(s):
+      DataLink< xAOD::MissingETContainer_v1 > dl1;
+      std::vector< DataLink< xAOD::MissingETContainer_v1 > > dl2;
+      ElementLink< xAOD::MissingETContainer_v1 > el1;
+      std::vector< ElementLink< xAOD::MissingETContainer_v1 > > el2;
+      std::vector< std::vector< ElementLink< xAOD::MissingETContainer_v1 > > > el3;
+      DataLink< xAOD::MissingETComponentMap_v1 > dl3;
+      std::vector< DataLink< xAOD::MissingETComponentMap_v1 > > dl4;
+      ElementLink< xAOD::MissingETComponentMap_v1 > el4;
+      std::vector< ElementLink< xAOD::MissingETComponentMap_v1 > > el5;
+      std::vector< std::vector< ElementLink< xAOD::MissingETComponentMap_v1 > > > el6;
+      DataLink< xAOD::MissingETAssociationMap_v1 > dl5;
+      std::vector< DataLink< xAOD::MissingETAssociationMap_v1 > > dl6;
+      ElementLink< xAOD::MissingETAssociationMap_v1 > el7;
+      std::vector< ElementLink< xAOD::MissingETAssociationMap_v1 > > el8;
+      std::vector< std::vector< ElementLink< xAOD::MissingETAssociationMap_v1 > > > el9;
+
+      // Smart pointers needed for the correct generation of the auxiliary
+      // class dictionaries:
+      ElementLink< xAOD::IParticleContainer > el10;
+      std::vector< ElementLink< xAOD::IParticleContainer > > el11;
+      std::vector< std::vector< ElementLink< xAOD::IParticleContainer > > > el12;
+
+      std::vector< MissingETBase::Types::bitmask_t > vec1;
+      std::vector< unsigned long long > vec2;
+      std::vector< std::vector< size_t > > vec3;
+      std::vector< std::vector< unsigned char > > vec4;
+      std::vector< std::vector< unsigned long long > > vec5;
+      std::vector< std::vector< std::vector< size_t > > > vec6;
+      std::vector< std::vector< std::vector< unsigned long > > > vec7;
+      std::vector< std::vector< std::vector< unsigned char > > > vec8;
+      std::vector< std::vector<std::vector<unsigned long long> > > vec9;
+   };
+}
+
+#endif // XAODMISSINGET_XAODMISSINGETDICT_H
+
+#undef  _BACKWARD_BACKWARD_WARNING_H
+
+TClass::LoadClassInfo     ERROR   no interpreter information for class xAOD::MissingETAuxContainer_v1 is available eventhough it has a TClass initialization routine.
+xAOD::TEvent::setUpDyn... WARNING Couldn't find setName(...) function for container MET_TruthAux.  (type: xAOD::MissingETAuxContainer_v1)
+TInterpreter::AutoParse   ERROR   Error parsing payload code for class xAOD::JetAuxContainer_v1 with content:
+
+
+#ifndef G__VECTOR_HAS_CLASS_ITERATOR
+  #define G__VECTOR_HAS_CLASS_ITERATOR 1
+#endif
+#ifndef ROOTCORE
+  #define ROOTCORE 1
+#endif
+#ifndef ROOTCORE_RELEASE_SERIES
+  #define ROOTCORE_RELEASE_SERIES 23
+#endif
+#ifndef ROOTCORE_TEST_FILE
+  #define ROOTCORE_TEST_FILE "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef ROOTCORE_TEST_DATA
+  #define ROOTCORE_TEST_DATA "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630"
+#endif
+#ifndef ASG_TEST_FILE_DATA
+  #define ASG_TEST_FILE_DATA "/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1"
+#endif
+#ifndef ASG_TEST_FILE_MC
+  #define ASG_TEST_FILE_MC "/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1"
+#endif
+#ifndef XAOD_STANDALONE
+  #define XAOD_STANDALONE 1
+#endif
+#ifndef XAOD_ANALYSIS
+  #define XAOD_ANALYSIS 1
+#endif
+#ifndef ROOTCORE_PACKAGE
+  #define ROOTCORE_PACKAGE "xAODJet"
+#endif
+
+#define _BACKWARD_BACKWARD_WARNING_H
+// Dear emacs, this is -*- c++ -*-
+// $Id: xAODJetDict.h 658646 2015-04-02 10:29:26Z delsart $
+#ifndef XAODJET_XAODJETDICT_H
+#define XAODJET_XAODJETDICT_H
+
+// Needed to successfully generate the dictionary in standalone mode:
+#if defined(__GCCXML__) and not defined(EIGEN_DONT_VECTORIZE)
+#   define EIGEN_DONT_VECTORIZE
+#endif // __GCCXML__
+
+// System include(s):
+#include <vector>
+
+// EDM include(s):
+#include "AthLinks/DataLink.h"
+#include "AthLinks/ElementLink.h"
+#include "AthLinks/ElementLinkVector.h"
+
+// Local include(s):
+#include "xAODJet/JetContainer.h"
+#include "xAODJet/versions/JetContainer_v1.h"
+#include "xAODJet/versions/JetAuxContainer_v1.h"
+#include "xAODJet/versions/JetTrigAuxContainer_v1.h"
+#include "xAODJet/versions/Jet_v1.h"
+#include "xAODJet/JetTypes.h"
+
+namespace {
+   struct GCCXML_DUMMY_INSTANTIATION_XAODJET {
+      // Instantiate the container for gccxml:
+      xAOD::JetContainer_v1 c1;
+
+      // Smart pointers to Jet_v1:
+      DataLink< xAOD::JetContainer_v1 > e1;
+      std::vector< DataLink< xAOD::JetContainer_v1 > > e2;
+      ElementLink< xAOD::JetContainer_v1 > e3;
+      std::vector< ElementLink< xAOD::JetContainer_v1 > > e4;
+      std::vector< std::vector< ElementLink< xAOD::JetContainer_v1 > > > e5;
+      ElementLinkVector< xAOD::JetContainer_v1 > e6;
+      std::vector< ElementLinkVector< xAOD::JetContainer_v1 > > e7;
+
+      // Instantiations to create the EL member dictionaries correctly:
+      xAOD::IParticleContainer pc1;
+      ElementLink<xAOD::IParticleContainer> e10;
+
+     std::pair<std::string,std::vector<const xAOD::IParticle*> > bug1;
+     std::pair<std::string,std::vector<float> > bug2;
+     std::pair<std::string,std::vector<std::vector<int> > > bug3;
+     std::pair<std::string,std::vector<std::vector<float> > > bug4;
+
+     // momentums     
+     //xAOD::JetFourMom_t jet4mom;
+     std::vector<xAOD::JetFourMom_t> vjet4mom;
+
+     //std::vector<const xAOD::IParticle*> vpart; not yet : not sure this belongs elsewhere ?
+     //
+   };
+}
+
+
+template float xAOD::Jet_v1::getAttribute<float> (xAOD::JetAttribute::AttributeID) const ; 
+template int xAOD::Jet_v1::getAttribute<int> (xAOD::JetAttribute::AttributeID) const ; 
+template xAOD::JetFourMom_t xAOD::Jet_v1::getAttribute<xAOD::JetFourMom_t> (xAOD::JetAttribute::AttributeID) const ; 
+template std::vector<float> xAOD::Jet_v1::getAttribute< std::vector<float> > (xAOD::JetAttribute::AttributeID) const ;
+template std::vector<int> xAOD::Jet_v1::getAttribute< std::vector<int> > (xAOD::JetAttribute::AttributeID) const ;
+
+template float xAOD::Jet_v1::getAttribute<float> (const std::string &) const ; 
+template int xAOD::Jet_v1::getAttribute<int> (const std::string &) const ; 
+template xAOD::JetFourMom_t xAOD::Jet_v1::getAttribute<xAOD::JetFourMom_t> (const std::string &) const ; 
+template std::vector<float> xAOD::Jet_v1::getAttribute< std::vector<float> > (const std::string &) const ;
+template std::vector<int> xAOD::Jet_v1::getAttribute< std::vector<int> > (const std::string &) const ;
+
+
+template void xAOD::Jet_v1::setAttribute<float>(const std::string &, const float& ) ;
+template void xAOD::Jet_v1::setAttribute<int>(const std::string &, const int& ) ;
+
+template void xAOD::Jet_v1::setAttribute<std::vector<float> >(const std::string &, const std::vector<float>& ) ;
+template void xAOD::Jet_v1::setAttribute<std::vector<int> >(const std::string &, const std::vector<int>& ) ;
+
+
+
+template std::vector<const xAOD::IParticle*> xAOD::Jet_v1::getAssociatedObjects<xAOD::IParticle >( xAOD::JetAttribute::AssoParticlesID ) const;
+template std::vector<const xAOD::IParticle*> xAOD::Jet_v1::getAssociatedObjects<xAOD::IParticle >( const std::string &  ) const ;
+
+template void xAOD::Jet_v1::setAssociatedObjects<xAOD::IParticle >( const std::string &, const std::vector<const xAOD::IParticle*>& ) ;
+
+
+template const xAOD::IParticle* xAOD::Jet_v1::getAssociatedObject<xAOD::IParticle>( const std::string &) const ;
+template const xAOD::IParticle* xAOD::Jet_v1::getAssociatedObject<xAOD::IParticle>( xAOD::JetAttribute::AssoParticlesID ) const ;
+template void xAOD::Jet_v1::setAssociatedObject<xAOD::IParticle>( const std::string &,  const xAOD::IParticle* ) ;
+
+
+
+#endif // XAODJET_XAODJETDICT_H
+
+#undef  _BACKWARD_BACKWARD_WARNING_H
+
+TClass::LoadClassInfo     ERROR   no interpreter information for class xAOD::JetAuxContainer_v1 is available eventhough it has a TClass initialization routine.
+xAOD::TEvent::setUpDyn... WARNING Couldn't find setName(...) function for container AntiKt4TruthJetsAux.  (type: xAOD::JetAuxContainer_v1)
+total weighted event: 3052.39
+pass at least 1 lepton cut: 1300.68
+pass exactly 1 lepton cut: 1300.68
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 6187.82
+pass at least 1 lepton cut: 2655.74
+pass exactly 1 lepton cut: 2655.74
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 9304.7
+pass at least 1 lepton cut: 3999.51
+pass exactly 1 lepton cut: 3999.51
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 12487.3
+pass at least 1 lepton cut: 5376.71
+pass exactly 1 lepton cut: 5376.71
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 15608
+pass at least 1 lepton cut: 6759.51
+pass exactly 1 lepton cut: 6759.51
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 18700.6
+pass at least 1 lepton cut: 8164.04
+pass exactly 1 lepton cut: 8164.04
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 21804.1
+pass at least 1 lepton cut: 9479.41
+pass exactly 1 lepton cut: 9479.41
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 24943.5
+pass at least 1 lepton cut: 10880.7
+pass exactly 1 lepton cut: 10880.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 28133.5
+pass at least 1 lepton cut: 12308.7
+pass exactly 1 lepton cut: 12308.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 31260.4
+pass at least 1 lepton cut: 13658
+pass exactly 1 lepton cut: 13658
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 34356.4
+pass at least 1 lepton cut: 14981.9
+pass exactly 1 lepton cut: 14981.9
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 37526.9
+pass at least 1 lepton cut: 16355
+pass exactly 1 lepton cut: 16355
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 40649.6
+pass at least 1 lepton cut: 17684.4
+pass exactly 1 lepton cut: 17684.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 43869.7
+pass at least 1 lepton cut: 19074.1
+pass exactly 1 lepton cut: 19074.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 47105.4
+pass at least 1 lepton cut: 20482.1
+pass exactly 1 lepton cut: 20482.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 50299.2
+pass at least 1 lepton cut: 21847.7
+pass exactly 1 lepton cut: 21847.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 53440
+pass at least 1 lepton cut: 23237.8
+pass exactly 1 lepton cut: 23237.8
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 56597.6
+pass at least 1 lepton cut: 24597.5
+pass exactly 1 lepton cut: 24597.5
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 59562.5
+pass at least 1 lepton cut: 25897.1
+pass exactly 1 lepton cut: 25897.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 62654.2
+pass at least 1 lepton cut: 27269.1
+pass exactly 1 lepton cut: 27269.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 65851.5
+pass at least 1 lepton cut: 28639.3
+pass exactly 1 lepton cut: 28639.3
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 68906.3
+pass at least 1 lepton cut: 29981.1
+pass exactly 1 lepton cut: 29981.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 71976.8
+pass at least 1 lepton cut: 31295.6
+pass exactly 1 lepton cut: 31295.6
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 75098.3
+pass at least 1 lepton cut: 32680.4
+pass exactly 1 lepton cut: 32680.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 78228.5
+pass at least 1 lepton cut: 34040.2
+pass exactly 1 lepton cut: 34040.2
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 81350
+pass at least 1 lepton cut: 35372.7
+pass exactly 1 lepton cut: 35372.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 84594.1
+pass at least 1 lepton cut: 36706.1
+pass exactly 1 lepton cut: 36706.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 87594.9
+pass at least 1 lepton cut: 37968.5
+pass exactly 1 lepton cut: 37968.5
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 90700.8
+pass at least 1 lepton cut: 39280.7
+pass exactly 1 lepton cut: 39280.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 93821.2
+pass at least 1 lepton cut: 40634.9
+pass exactly 1 lepton cut: 40634.9
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 96953.2
+pass at least 1 lepton cut: 42000.4
+pass exactly 1 lepton cut: 42000.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 99963.7
+pass at least 1 lepton cut: 43271.9
+pass exactly 1 lepton cut: 43271.9
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 103168
+pass at least 1 lepton cut: 44718.2
+pass exactly 1 lepton cut: 44718.2
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 106258
+pass at least 1 lepton cut: 46047.1
+pass exactly 1 lepton cut: 46047.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 109496
+pass at least 1 lepton cut: 47489.7
+pass exactly 1 lepton cut: 47489.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 112600
+pass at least 1 lepton cut: 48831
+pass exactly 1 lepton cut: 48831
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 115609
+pass at least 1 lepton cut: 50181
+pass exactly 1 lepton cut: 50181
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 118759
+pass at least 1 lepton cut: 51525.9
+pass exactly 1 lepton cut: 51525.9
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 121802
+pass at least 1 lepton cut: 52900.7
+pass exactly 1 lepton cut: 52900.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 124931
+pass at least 1 lepton cut: 54255.3
+pass exactly 1 lepton cut: 54255.3
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 128053
+pass at least 1 lepton cut: 55640.2
+pass exactly 1 lepton cut: 55640.2
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 131054
+pass at least 1 lepton cut: 56831.8
+pass exactly 1 lepton cut: 56831.8
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 134191
+pass at least 1 lepton cut: 58213.8
+pass exactly 1 lepton cut: 58213.8
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 137283
+pass at least 1 lepton cut: 59531.3
+pass exactly 1 lepton cut: 59531.3
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 140333
+pass at least 1 lepton cut: 60863.3
+pass exactly 1 lepton cut: 60863.3
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 143529
+pass at least 1 lepton cut: 62247.6
+pass exactly 1 lepton cut: 62247.6
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 146652
+pass at least 1 lepton cut: 63635.1
+pass exactly 1 lepton cut: 63635.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 149703
+pass at least 1 lepton cut: 64992
+pass exactly 1 lepton cut: 64992
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 152801
+pass at least 1 lepton cut: 66339.7
+pass exactly 1 lepton cut: 66339.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 155928
+pass at least 1 lepton cut: 67799
+pass exactly 1 lepton cut: 67799
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 159001
+pass at least 1 lepton cut: 69194.2
+pass exactly 1 lepton cut: 69194.2
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 162158
+pass at least 1 lepton cut: 70575
+pass exactly 1 lepton cut: 70575
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 165231
+pass at least 1 lepton cut: 71941
+pass exactly 1 lepton cut: 71941
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 168345
+pass at least 1 lepton cut: 73284.7
+pass exactly 1 lepton cut: 73284.7
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 171446
+pass at least 1 lepton cut: 74654.8
+pass exactly 1 lepton cut: 74654.8
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 174610
+pass at least 1 lepton cut: 75993.1
+pass exactly 1 lepton cut: 75993.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 177732
+pass at least 1 lepton cut: 77343.8
+pass exactly 1 lepton cut: 77343.8
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 180844
+pass at least 1 lepton cut: 78656.9
+pass exactly 1 lepton cut: 78656.9
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 183944
+pass at least 1 lepton cut: 80035
+pass exactly 1 lepton cut: 80035
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 187057
+pass at least 1 lepton cut: 81386.8
+pass exactly 1 lepton cut: 81386.8
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 190280
+pass at least 1 lepton cut: 82776.4
+pass exactly 1 lepton cut: 82776.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 193431
+pass at least 1 lepton cut: 84096.6
+pass exactly 1 lepton cut: 84096.6
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 196693
+pass at least 1 lepton cut: 85458.1
+pass exactly 1 lepton cut: 85458.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 199745
+pass at least 1 lepton cut: 86790.4
+pass exactly 1 lepton cut: 86790.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 203023
+pass at least 1 lepton cut: 88198.2
+pass exactly 1 lepton cut: 88198.2
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 206156
+pass at least 1 lepton cut: 89578.1
+pass exactly 1 lepton cut: 89578.1
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 209363
+pass at least 1 lepton cut: 90907.4
+pass exactly 1 lepton cut: 90907.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 212528
+pass at least 1 lepton cut: 92187
+pass exactly 1 lepton cut: 92187
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 215762
+pass at least 1 lepton cut: 93532.3
+pass exactly 1 lepton cut: 93532.3
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 218835
+pass at least 1 lepton cut: 94838.3
+pass exactly 1 lepton cut: 94838.3
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 221923
+pass at least 1 lepton cut: 96178.9
+pass exactly 1 lepton cut: 96178.9
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 225055
+pass at least 1 lepton cut: 97464.4
+pass exactly 1 lepton cut: 97464.4
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 228123
+pass at least 1 lepton cut: 98749.5
+pass exactly 1 lepton cut: 98749.5
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 231197
+pass at least 1 lepton cut: 100082
+pass exactly 1 lepton cut: 100082
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 234292
+pass at least 1 lepton cut: 101421
+pass exactly 1 lepton cut: 101421
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 237492
+pass at least 1 lepton cut: 102905
+pass exactly 1 lepton cut: 102905
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 240670
+pass at least 1 lepton cut: 104236
+pass exactly 1 lepton cut: 104236
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 243874
+pass at least 1 lepton cut: 105608
+pass exactly 1 lepton cut: 105608
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 247011
+pass at least 1 lepton cut: 106987
+pass exactly 1 lepton cut: 106987
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 250237
+pass at least 1 lepton cut: 108378
+pass exactly 1 lepton cut: 108378
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 253157
+pass at least 1 lepton cut: 109612
+pass exactly 1 lepton cut: 109612
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 256256
+pass at least 1 lepton cut: 111032
+pass exactly 1 lepton cut: 111032
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 259359
+pass at least 1 lepton cut: 112370
+pass exactly 1 lepton cut: 112370
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+total weighted event: 262542
+pass at least 1 lepton cut: 113772
+pass exactly 1 lepton cut: 113772
+pass 200 MET cut: 0
+pass 2 b-jet cut: 0
+pass b-jets pt cut: 0
+pass aMT2 cut: 0
+pass close b-jet/MET: 0
+pass mbb cut: 0
+pass pT_lep / MET cut: 0
+pass pT_lep cut: 0
+ 
+worker finished:
+Real time 0:11:13, CP time 417.110
+xAOD::TFileAccessTracer   INFO    Sending file access statistics to http://rucio-lb-prod.cern.ch:18762/traces/

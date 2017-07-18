@@ -1,0 +1,38 @@
+#!/bin/bash
+echo starting batch job initialization
+export PATH LD_LIBRARY_PATH PYTHONPATH
+echo batch job user initialization finished
+EL_JOBID=$1
+
+function abortJob {
+  touch "/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/fetch/fail-$EL_JOBID"
+  touch "/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/fetch/done-$EL_JOBID"
+  exit 1
+}
+
+test "$TMPDIR" == "" && TMPDIR=/tmp
+EL_JOBSEG=`grep "^$EL_JOBID " "/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/submit/segments" | awk ' { print $2 }'`
+test "$EL_JOBSEG" != "" || abortJob
+hostname
+pwd
+whoami
+
+RUNDIR=${TMPDIR}/EventLoop-Worker-$EL_JOBSEG-`date +%s`-$$
+mkdir "$RUNDIR" || abortJob
+cd "$RUNDIR" || abortJob
+export ROOTCORECONFIG=x86_64-slc6-gcc49-opt
+
+if test -z ${ROOTCOREBIN+x}
+then
+  if test -e /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/local_setup.sh
+  then
+    source /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/local_setup.sh || abortJob
+  else
+    source /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/RootCore/scripts/setup.sh || abortJob
+  fi
+fi
+
+rc root -l -b -q "$ROOTCOREDIR/scripts/load_packages.C" "$ROOTCOREBIN/user_scripts/EventLoop/batch_worker.C($EL_JOBID,\"/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/submit/config.root\")" || abortJob
+test -f "/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/fetch/completed-$EL_JOBID" || touch "/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/fetch/fail-$EL_JOBID"
+touch "/home/shepj/xaod/ROOTAnalysisTutorial/Run/signal_800_170_167_weights/fetch/done-$EL_JOBID"
+cd .. && rm -rf "$RUNDIR"

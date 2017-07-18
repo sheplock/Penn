@@ -1,0 +1,13 @@
+ÄcPyJobTransformsCore.JobReport
+JobReport
+q)Åq}q(U_JobReport__ignoreErrorsqâUgpickle_dictq}qU_JobReport__printNoneqâUuseNewMetadataFormatqâU_JobReport__modifiedq	àU_JobReport__printOptionsq
+]qU_JobReport__printNotOptionsq]qUvalidationSuccessqàU_JobReport__ignoreUnknownqâU_taskq(cPyJobTransformsCore.JobReport
+TaskInfo
+qoq}q(Uerrorsq]qcPyJobTransformsCore.AtlasErrorCodes
+ErrorInfo
+q)ÅqN}q(UcategoryqcPyJobTransformsCore.AtlasErrorCodes
+ErrorCategory
+q)Åq}q(UacronymqUATH_FAILUREqUcountqKUcodeq M¯*Udescriptionq!UAthena non-zero exitq"ubUcountq#KUstderrq$NUcodeq%M¯*Useverityq&UFATALq'Uproducerq(Uathenaq)Ustdoutq*NUacronymq+hU	backtraceq,]q-((Ué/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc5-gcc43-opt/17.2.14/AtlasCore/17.2.14/InstallArea/python/PyJobTransformsCore/athena_wrapper.pyq.K™U<module>q/Uexecfile( athena_exe )tq0(Uu/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc5-gcc43-opt/17.2.14/AtlasCore/17.2.14/InstallArea/share/bin/athena.pyq1Mh/U&include( "AthenaCommon/Execution.py" )tq2(UÜ/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc5-gcc43-opt/17.2.14/AtlasCore/17.2.14/InstallArea/jobOptions/AthenaCommon/Execution.pyq3K'h/UtheApp.exit()tq4(U/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc5-gcc43-opt/17.2.14/AtlasCore/17.2.14/InstallArea/python/AthenaCommon/AppMgr.pyq5MUexitq6U4sys.exit( code == None and self._exitstate or code )tq7eUwhoq8NU	diagnosisq9NUmessageq:USystemExit 2q;U
+exitstatusq<NUeventsq=NUstageq>NuÜbaU_XMLNode__contentsq?NUinFilesq@}qAU_XMLNode__attributesqB}qC(UcommentqDNUtasknameqEh)UversionqFNUmetaDataqG}qHuUerrorCategoriesqI}qJhh)ÅqK}qL(hhhKh M¯*h!h"ubsU_XMLNode__nameqMUTaskqNUsubTasksqO]qPUcommandqQU·/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc5-gcc43-opt/17.2.14/AtlasCore/17.2.14/InstallArea/share/bin/athena.py '-b' 'runargs.Generate.py' 'EvgenJobTransforms/skeleton.GENtoEVGEN.py' 'Generate_messageSvc_jobOptions.py' qRUvalidationErrorsqS]qTUoutFilesqU}qVUinfosqW}qXUerrorLimitsqY}qZ(h'K	UWARNINGq[K
+UERRORq\K
+uubU_trfVersionq]NU_trfq^h)U_JobReport__ignoreAllq_âU_trfCommentq`Nub.

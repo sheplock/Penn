@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE POOLFILECATALOG
+  SYSTEM 'InMemory'>
+<POOLFILECATALOG>
+ <File ID="None">
+  <logical>
+   <lfn name="test2.EVNT.root"/>
+  </logical>
+  <metadata att_name="geometryVersion" att_value="None"/>
+  <metadata att_name="conditionsTag" att_value="None"/>
+  <metadata att_name="size" att_value="None"/>
+  <metadata att_name="events" att_value="None"/>
+  <metadata att_name="beamType" att_value="None"/>
+  <metadata att_name="fileType" att_value="EVNT"/>
+ </File>
+</POOLFILECATALOG>
+

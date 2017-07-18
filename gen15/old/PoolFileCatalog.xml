@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Edited By POOL -->
+<!DOCTYPE POOLFILECATALOG SYSTEM "InMemory">
+<POOLFILECATALOG>
+  <File ID="1B529B06-5B1D-1546-A374-37DEF679BE37">
+    <physical>
+      <pfn filetype="ROOT_All" name="test2.EVNT.root"/>
+    </physical>
+    <logical/>
+  </File>
+
+  <File ID="18A48614-FCDB-D145-9B37-3B90A5123C23">
+    <physical>
+      <pfn filetype="ROOT_All" name="DAOD_MCGN1.VBF.root"/>
+    </physical>
+    <logical/>
+  </File>
+
+  <File ID="6B57666C-DA1B-F146-8D3A-BE5E165807AD">
+    <physical>
+      <pfn filetype="ROOT_All" name="DAOD_MCGN1.TEST2.root"/>
+    </physical>
+    <logical/>
+  </File>
+
+</POOLFILECATALOG>

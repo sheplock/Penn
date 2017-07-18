@@ -1,0 +1,487 @@
+.x doAllSig.C
+.q
+.x doAllSig.C
+.q
+.x doAllSig.C
+.q
+.x doAllSig.C
+.q
+.x TMVAClassification.C("CutsGA")
+TFile *_file0 = TFile::Open("out.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x doAllSig.C
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_600_370_350/mc15_13TeV.387600.MGPy8EG_A14N_TT_onestepBB_600_370_350_MET60.DAOD_SUSY5.root")
+TTree *tree = (TTree*)_file0->Get("TT_onestepBB_600_370_350_Nom");
+tree->Draw("n_jet>>n_jet");
+tree->Draw("n_jet>>n_jet","xs_weight*sf_total*weight*(HLT_xe100_mht_L1XE50 && met>255e3 && n_bjet>=2 && bjet_pt[0]>140e3 && bjet_pt[1]>65e3 && amt2 > 195 && dphi_b_ptmiss_min > 1.0 && m_bb > 225e3 && lepPt_over_met<0.04 && met+bjet_pt[0]+bjet_pt[1]>325)")
+n_jet->Integral()
+n_jet->Integral()*36.5e3
+n_jet->Integral(0,10)*36.5e3
+n_jet->Integral(0,11)*36.5e3
+.q
+TFile *_file0 = TFile::Open("out.root")
+TBrowser g
+.q
+TFile *_file0 = TFile::Open("../data/all_ttbar.root")
+TBrowser g
+TTree *tree = (TTree*)_file0->Get("ttbar_Nom")
+tree->Draw("n_jet>>n_jet","xs_weight*sf_total*weight*(HLT_xe100_mht_L1XE50 && met>255e3 && n_bjet>=2 && bjet_pt[0]>140e3 && bjet_pt[1]>65e3 && amt2 > 195 && dphi_b_ptmiss_min > 1.0 && m_bb > 225e3 && lepPt_over_met<0.04 && met+bjet_pt[0]+bjet_pt[1]>325)")
+n_jet->Integral()*36.5e3
+.q
+TFile *_file0 = TFile::Open("../data/all_singletop.root")
+TTree *tree = (TTree*)_file0->Get("singletop_Nom")
+tree->Draw("n_jet>>n_jet","xs_weight*sf_total*weight*(HLT_xe100_mht_L1XE50 && met>255e3 && n_bjet>=2 && bjet_pt[0]>140e3 && bjet_pt[1]>65e3 && amt2 > 195 && dphi_b_ptmiss_min > 1.0 && m_bb > 225e3 && lepPt_over_met<0.04 && met+bjet_pt[0]+bjet_pt[1]>325)")
+n_jet->Integral()*36.5e3
+.q
+TFile *_file0 = TFile::Open("../data/all_wjets.root")
+TTree *tree = (TTree*)_file0->Get("wjets_22_Nom")
+tree->Draw("n_jet>>n_jet","xs_weight*sf_total*weight*(HLT_xe100_mht_L1XE50 && met>255e3 && n_bjet>=2 && bjet_pt[0]>140e3 && bjet_pt[1]>65e3 && amt2 > 195 && dphi_b_ptmiss_min > 1.0 && m_bb > 225e3 && lepPt_over_met<0.04 && met+bjet_pt[0]+bjet_pt[1]>325)")
+atree->Draw("n_jet>>n_jet","xs_weight*sf_total*weight*(HLT_xe100_mht_L1XE50 && met>255e3 && n_bjet>=2 && bjet_pt[0]>140e3 && bjet_pt[1]>65e3 && amt2 > 195 && dphi_b_ptmiss_min > 1.0 && m_bb > 225e3 && lepPt_over_met<0.04 && met+bjet_pt[0]+bjet_pt[1]>325)")
+n_jet->Integral()*36.5e3
+64+53
+14.57+16.41+19.06
+54.68/sqrt(50.04)
+54.68/sqrt(50.04+0.3*50.04*0.3*50.04)
+.x doAllSig.C
+.q
+.x doAllSig.C
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x doAllSig.C
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.x TMVAClassification.C("CutsGA")
+.q
+.q
+.x doAllSig.C
+.Q
+TFile *_file0 = TFile::Open("out_800_100.root")
+TBrowser g
+.q
+.x doAllSig_shapeFit.C
+.q
+.x doAllSig_shapeFit.C
+.q
+.x doAllSig_shapeFit.C
+.q
+TFile *signal = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root");
+TFile *sig_file = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root");
+TFile *ttbar_file = TFile::Open("/home/shepj/TMVA-v4.2.0/test/data/all_ttbar.root");
+TFile *singletop_file = TFile::Open("/home/shepj/TMVA-v4.2.0/test/data/all_singletop.root");
+TFile *wjets_file = TFile::Open("/home/shepj/TMVA-v4.2.0/test/data/all_wjets.root");
+TTree *sig = (*TTree)sig_file->Get("TT_onestepBB_800_120_100_Nom");
+TTree *sig = (TTree*)sig_file->Get("TT_onestepBB_800_120_100_Nom");
+TTree *ttbar = (TTree*)ttbar_file->Get("ttbar_Nom");
+TTree *singletop = (TTree*)singletop_file->Get("ttbar_Nom");
+singletop = (TTree*)singletop_file->Get("singletop_Nom");
+TTree *wjets = (TTree*)singletop_file->Get("wjets_22_Nom");
+wjets = (TTree*)wjets_file->Get("wjets_22_Nom");
+sig->Draw("n_jet>>n_jet");
+n_jet->SetLineColor("kBlue");
+.q
+TFile *_file0 = TFile::Open("out_shapeFit.root")
+TBrowser g
+sig->Draw();
+sig->Draw("colz","text");
+sig->Draw("colz,text");
+sig->Write("sig_800_100_shape");
+.q
+TFile *_file0 = TFile::Open("out_800_100.root")
+TBrowser g
+.q
+.x mvaeffs.C
+.q
+TFile *fSig = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_800_120_100/","READ");
+TFile *fSig = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_800_120_100/");
+fSig = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_800_120_100/");
+fSig = TFile::Open("/disk/userdata00/atlas_data2/herwig/bCsoft/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root");
+TTree *tSig = (TTree*)tSig->Get("TT_onestepBB_800_120_100_Nom");
+TTree *tSig = (TTree*)fSig->Get("TT_onestepBB_800_120_100_Nom");
+TString *var = "met";
+TString var = "met";
+tSig->Draw(met)
+tSig->Draw(var)
+tSig->Draw(var>>var)
+tSig->Draw(var+">>"+var)
+var->Integral()
+tSig->Draw(var+">>h_"+var)
+h_var->Integral()
+tSig->Draw(var+">>h_met")
+h_met->Integral()
+TString var2 = "bjet_pt[0]"
+tSig->Draw(var2);
+tSig->Draw(var2+">>h_"+var2);
+h_bjet_pt[0]->Integral()
+.q
+.x makePlots.C
+.q
+.x makePlots.C
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/161213/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root")
+TBrowser g
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/161213/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *_file0 = TFile::Open("all_wjets_new.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/161213/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root")
+TBrowser g
+bjet_pt->Entries()
+bjet_pt->Draw();
+bjet_pt->Draw()
+TTree *tSig = (TTree*)_file0->Get("TT_onestepBB_180_120_100_Nom");
+tSig->Draw("bjet_pt")
+tSig->Draw("bjet_pt[0]")
+tSig = (TTree*)_file0->Get("TT_onestepBB_800_120_100_Nom");
+tSig->Draw("bjet_pt")
+tSig->Draw("bjet_pt")
+tSig->Draw("bjet_pt[0]")
+tSig->Draw("bjet_pt[1]")
+tSig->Draw("rrtop_m")
+tSig->Draw("rrtop_m[0]")
+tSig->Draw("rrtop_m[1]")
+tSig->Draw("rrtop_m[0]")
+tSig->Draw("rrtop_m[2]")
+tSig->Draw("rrtop_m[3]")
+tSig->Draw("rrtop_m[3]")
+tSig->Draw("rrtop_m[2]")
+.q
+TFile *_file0 = TFile::Open("data/all_ttbar_new.root")
+TTree *bkg = (TTree*)_file0->Get("ttbar_Nom");
+bkg->Draw("rrtop_m")
+bkg->Draw("rrtop_m[0]")
+bkg->Draw("rrtop_m[1]")
+bkg->Draw("rrtop_m[2]")
+bkg->Draw("rrtop_m[3]")
+.q
+.x TMVAClassification.C("CutsGA")
+.
+.q
+.x TMVAClassification.C("CutsGA")
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/161213/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root")
+TTree *tSig = (TTree*)_file0->Get("TT_onestepBB_800_120_100_Nom");
+tSig->Draw("lep_pt")
+tSig->Draw("lep_pt[0]")
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+dds.q
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/TT_tN1tN2bC1_800_150_145/mc15_13TeV.389835.MGPy8EG_A14N23LO_TT_tN1tN2bC1_800_150_145_DM5.DAOD_SUSY5.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/allsignal.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/allsignal.root")
+TBrowser g
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/wjets_22.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *_file0 = TFile::Open("TMVA.root")
+TBrowser g
+.q
+.q
+TFile *f_ttbar = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/ttbar.root");
+TTree *ttbar = (TTree*)f_ttbar->Get("ttbar_Nom");
+ttbar->Draw("n_jets")
+ttbar->Draw("n_jet")
+ttbar->Draw("n_jet>>n_jet")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>515000 && n_bjet>=2 && bjet_pt[0]>280000 && bjet_pt[1]>270000 && amt2 > 340 && dphi_b_ptmiss_min > 0.9 && m_bb > 270000 && lepPt_over_met<0.13)")
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>295000 && bjet_pt[1]>130000 && amt2 > 335 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.025)")
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>385000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>180000 && amt2 > 335 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.04)")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>295000 && bjet_pt[1]>130000 && amt2 > 335 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.025)")
+n_jet->Integral()
+TFile *f_singletop = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/singletop.root");
+TTree *singletop = (TTre*)f_singletop->Get("singletop_Nom");
+TTree *singletop = (TTree*)f_singletop->Get("singletop_Nom");
+singletop->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>295000 && bjet_pt[1]>130000 && amt2 > 335 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.025)")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>385000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>180000 && amt2 > 335 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.04)")
+singletop->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>385000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>180000 && amt2 > 335 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.04)")
+singletop->Integral()
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>335000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>105000 && amt2 > 215 && dphi_b_ptmiss_min > 0.15 && m_bb > 160000 && lepPt_over_met<0.9)")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>250000 && bjet_pt[1]>130000 && amt2 > 340 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.04)")
+n_jet->Integral()
+singeltop->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>250000 && bjet_pt[1]>130000 && amt2 > 340 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.04)")
+singletop->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>250000 && bjet_pt[1]>130000 && amt2 > 340 && dphi_b_ptmiss_min > 1.8 && m_bb > 150000 && lepPt_over_met<0.04)")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>335000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>105000 && amt2 > 215 && dphi_b_ptmiss_min > 0.5 && m_bb > 160000 && lepPt_over_met<0.5)")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>105000 && amt2 > 215 && dphi_b_ptmiss_min > 0.5 && m_bb > 160000 && lepPt_over_met<0.5)")
+n_jet->Integral()
+ttbar->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>180000 && amt2 > 215 && dphi_b_ptmiss_min > 0.5 && m_bb > 160000 && lepPt_over_met<0.5)")
+n_jet->Integral()
+singletop->Draw("n_jet>>n_jet","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>390000 && n_bjet>=2 && bjet_pt[0]>245000 && bjet_pt[1]>180000 && amt2 > 215 && dphi_b_ptmiss_min > 0.5 && m_bb > 160000 && lepPt_over_met<0.5)")
+n_jet->Integral()
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/ttbar.root")
+TTree* ttbar = (TTree*)_file0->Get("ttbar_Nom");
+ttbar->Draw("met")
+ttbar->Draw("amt2>>h_amt2")
+h_amt2->
+ttbar->Draw("amt2>>h_amt2","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000) ")
+TFile *f_singletop = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/singletop.root");
+TTree *singletop = (TTree*)f_singletop->Get("singletop_Nom");
+singletop->Draw("amt2>>h_amt2","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000) ")
+singletop->Draw("amt2>>h_amt2","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+#singletop->Draw("dphi_b_ptmiss_min","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+singletop->Draw("dphi_b_ptmiss_min","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+singletop->Draw("mbb>>h_mbb","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+singletop->Draw("m_bb>>h_mbb","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+TFile *f_wjets = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/wjets_22.root");
+TTree *wjets = (TTree*)f_wjets->Get("wjets_22_Nom");
+wjets->Draw("met>>h_met","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+wjets->Draw("met>>h_met","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && n_bjet>=2 && bjet_pt[0]>100000)")
+wjets->Draw("met>>h_met","xs_weight * sf_total * weight * 36.5e3 * (n_bjet>=2 && bjet_pt[0]>100000)")
+wjets->Draw("bjet_pt[0]>>h_bjet0","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+wjets->Draw("bjet_pt[1]>>h_bjet0","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+wjets->Draw("m_bb>>h_bjet0","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+TFile *f_signal = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/TT_tN1tN2bC1_800_150_130/mc15_13TeV.389838.MGPy8EG_A14N23LO_TT_tN1tN2bC1_800_150_130.DAOD_SUSY5.root");
+TTree *signal = (TTree*)f_signal->Get("TT_tN1tN2bC1_800_150_130_Nom");
+signal->Draw("pTlep_over_met");
+signal->Draw("lepPt_over_met");
+signal->Draw("lepPt_over_met>>h_sig");
+h_sig->SetLineWidth(2.5)
+ttbar->Draw("lepPt_over_met>>h_ttbar");
+signal->Draw("lepPt_over_met>>h_sig","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)");
+ttbar->Draw("lepPt_over_met>>h_ttbar","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000)");
+signal->Draw("lepPt_over_met>>h_sig","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000)");
+singletop->Draw("lepPt_over_met>>h_singletop","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000)");
+wjets->Draw("lepPt_over_met>>h_wjets","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000)");
+h_sig->SetLineWidth(2.5)
+h_ttbar->Draw()
+h_singletop->Draw()
+h_wjets->Draw()
+h_sig->SetLineColor(0)
+h_sig->Draw()
+h_ttbar->Draw("SAME")
+h_singletop->Draw("SAME")
+h_wjets->Draw("SAME")
+h_sig->Draw()
+h_sig->Draw()
+signal->Draw("lepPt_over_met")
+signal->Draw("lepPt_over_met","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+signal->Draw("lepPt_over_met","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000)")
+h_ttbar->Draw()
+h_singletop->Draw("SAME")
+h_wjets->Draw("SAME")
+h_ttbar->Draw()
+ttbar->Draw("lepPt_over_met>>h_ttbar","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2 && bjet_pt[0]>100000 && bjet_pt[1]>50000 && amt2 > 200 && dphi_b_ptmiss_min > 0.5)");
+ttbar->Draw("lepPt_over_met>>h_ttbar","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>480000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 345 && dphi_b_ptmiss_min > 1.0 && m_bb > 270)");
+h_ttbar->Rebin(4)
+h_ttbar->Rebin(0.25
+@
+h_ttbar->Rebin(0.25)
+ttbar->Draw("lepPt_over_met>>h_ttbar","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>480000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 345 && dphi_b_ptmiss_min > 1.0 && m_bb > 270)");
+ttbar->Draw("lepPt_over_met>>h_ttbar","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>480000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 345 && dphi_b_ptmiss_min > 1.0 && m_bb > 270)");
+ttbar->Draw("lepPt_over_met>>h_ttbar1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>480000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 345 && dphi_b_ptmiss_min > 1.0 && m_bb > 270)");
+ttbar->Draw("lepPt_over_met>>h_ttbar1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>250000 && n_bjet>=2 && bjet_pt[0]>200000 && bjet_pt[1]>100000 && amt2 > 200 && dphi_b_ptmiss_min > 0.5 && m_bb > 200)");
+singletop->Draw("lepPt_over_met>>h_singletop1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>250000 && n_bjet>=2 && bjet_pt[0]>200000 && bjet_pt[1]>100000 && amt2 > 200 && dphi_b_ptmiss_min > 0.5 && m_bb > 200)");
+wjets->Draw("lepPt_over_met>>h_wjets1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>250000 && n_bjet>=2 && bjet_pt[0]>200000 && bjet_pt[1]>100000 && amt2 > 200 && dphi_b_ptmiss_min > 0.5 && m_bb > 200)");
+signal->Draw("lepPt_over_met>>h_sig1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>250000 && n_bjet>=2 && bjet_pt[0]>200000 && bjet_pt[1]>100000 && amt2 > 200 && dphi_b_ptmiss_min > 0.5 && m_bb > 200)");
+h_sig1->SetLineColor(0)
+h_sig1->SetLineWidth(2.5)
+h_sig1->Draw()
+h_sig1->SetLineColor(1)
+h_sig1->Draw()
+h_ttbar1->Draw()
+h_singletop1->Draw()
+h_wjets1->Draw()
+THStack *hs = new THStack("hs","hs");
+hs->Add(h_ttbar1)
+hs->Add(h_singletop1)
+hs->Add(h_wjets1)
+hs->Draw()
+h_sig1->Draw("SAME")
+TFile* f_sig = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/161213/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root");
+TTree *sig = (TTree*)f_sig->Get("TT_onestepBB_800_120_100_Nom");
+sig->Draw("lepPt_over_met>>h_sig1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>250000 && n_bjet>=2 && bjet_pt[0]>200000 && bjet_pt[1]>100000 && amt2 > 200 && dphi_b_ptmiss_min > 0.5 && m_bb > 200)");
+h_sig1->SetLineColor(1)
+h_sig1->SetLineWidth(2.5)
+hs->Draw()
+h_sig1->Draw("SAME")
+ttbar->Draw("lepPt_over_met>>h_ttbar1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>260000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 370 && dphi_b_ptmiss_min > 0.12 && m_bb > 305)");
+singletop->Draw("lepPt_over_met>>h_singletop1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>260000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 370 && dphi_b_ptmiss_min > 0.12 && m_bb > 305)");
+wjets->Draw("lepPt_over_met>>h_wjets1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>260000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 370 && dphi_b_ptmiss_min > 0.12 && m_bb > 305)");
+sig->Draw("lepPt_over_met>>h_sig1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>260000 && n_bjet>=2 && bjet_pt[0]>240000 && bjet_pt[1]>240000 && amt2 > 370 && dphi_b_ptmiss_min > 0.12 && m_bb > 305)");
+h_sig1->SetLineColor(1)
+h_sig1->SetLineWidth(2.5)
+THStack *hs1 = new THStack("hs1","hs1");
+hs1->Add(h_ttbar1);
+hs1->Add(h_singletop1);
+hs1->Add(h_wjets1);
+hs1->Draw()
+hs1->Draw()
+h_wjets1->Draw()
+THStack *hs2 = new THStack("hs2","hs2");
+hs1->Add(h_ttbar1);
+hs1->Add(h_singletop1);
+hs1->Add(h_wjets1);
+hs2->Add(h_ttbar1);
+hs2->Add(h_singletop1);
+hs2->Add(h_wjets1);
+hs2->Draw()
+h_sig1->Draw("SAME")
+h_ttbar1->Draw()
+h_singletop1->Draw()
+h_wjets1->Draw()
+h_sig1->Draw()
+THStack *hs3 = new THStack("hs3","hs3");
+hs3->Add(h_ttbar1);
+hs3->Add(h_singletop1);
+hs3->Add(h_wjets1);
+hs3->Draw()
+h_sig1->Draw("SAME")
+h_sig1->Draw()
+h_ttbar1->Draw("SAME")
+h_singletop1->Draw("SAME")
+h_wjets1->Draw("SAME")
+h_ttbar1->Draw()
+h_singletop1->Draw()
+h_wjets1->Draw()
+.q
+TFile *_file0 = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/singletop.root")
+TBrowser g
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+.x TMVAClassification.C("CutsGA")
+.q
+TFile *f_sig = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/161213/TT_onestepBB_800_120_100/mc15_13TeV.387631.MGPy8EG_A14N_TT_onestepBB_800_120_100_MET60.DAOD_SUSY5.root");
+TTree *sig = (TTree*)f_sig->Open("TT_onestepBB_800_120_100_Nom");
+TTree *sig = (TTree*)f_sig->Get("TT_onestepBB_800_120_100_Nom");
+TH1F *h_sig = new TH1F("h_sig","h_sig",100,0,1);
+sig->Draw("lepPt_over_met>>h_sig")
+sig->Draw("lepPt_over_met>>h_sig1","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>230000 && n_bjet>=2 && bjet_pt[0]>260000 && bjet_pt[1]>210000 && amt2 > 380 && dphi_b_ptmiss_min > 0.8 && m_bb > 250)");
+TH1F *h_sig_new = new TH1F("h_sig_new","h_sig_new",50,0,1);
+sig->Draw("lepPt_over_met>>h_sig_new","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>230000 && n_bjet>=2 && bjet_pt[0]>260000 && bjet_pt[1]>210000 && amt2 > 380 && dphi_b_ptmiss_min > 0.8 && m_bb > 250)");
+TFile *f_ttbar = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/ttbar.root");
+TTree* ttbar = (TTree*)f_ttbar->Get("ttbar_Nom");
+TFile *f_singletop = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/singletop.root")
+TTree *singletop = (TTree*)f_singletop->Get("singletop_Nom");
+TFile *f_wjets = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/wjets_22.root");
+TTree *wjets = (TTree*)f_wjets->Get("wjets_22_Nom");
+TH1F *h_ttbar_new = new TH1F("h_ttbar_new","h_ttbar_new",50,0,1);
+TH1F *h_singletop_new = new TH1F("h_singletop_new","h_singletop_new",50,0,1);
+TH1F *h_wjets_new = new TH1F("h_wjets_new","h_wjets_new",50,0,1);
+ttbar->Draw("lepPt_over_met>>h_ttbar_new","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>230000 && n_bjet>=2 && bjet_pt[0]>260000 && bjet_pt[1]>210000 && amt2 > 380 && dphi_b_ptmiss_min > 0.8 && m_bb > 250)");
+singletop->Draw("lepPt_over_met>>h_singletop_new","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>230000 && n_bjet>=2 && bjet_pt[0]>260000 && bjet_pt[1]>210000 && amt2 > 380 && dphi_b_ptmiss_min > 0.8 && m_bb > 250)");
+wjets->Draw("lepPt_over_met>>h_wjets_new","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>230000 && n_bjet>=2 && bjet_pt[0]>260000 && bjet_pt[1]>210000 && amt2 > 380 && dphi_b_ptmiss_min > 0.8 && m_bb > 250)");
+h_ttbar_new->SetLineColor(4);
+h_ttbar_new->SetFillColor(4);
+h_ttbar_new->SetFillStyle(1001);
+h_singletop_new->SetLineColor(3);
+h_singletop_new->SetFillColor(3);
+h_singletop_new->SetFillStyle(1001);
+h_wjets_new->SetLineColorAlpha(kOrange);
+h_wjets_new->SetFillColorAlpha(kOrange);
+h_wjets_new->SetLineColor(800);
+h_wjets_new->SetFillColor(800);
+h_wjets_new->SetFillStyle(1001);
+THStack *hs = new THStack("hs","hs");
+hs->Add(h_ttbar_new);
+hs->Add(h_singletop_new);
+hs->Add(h_wjets_new);
+hs->Draw()
+h_sig_new->Draw("SAME");
+TLegend *leg = new TLegend(0.1,0.7,0.48,0.9);
+leg->AddEntry(h_ttbar_new, "ttbar","f");
+leg->AddEntry(h_singletop_new, "singletop","f");
+leg->AddEntry(h_wjets_new, "w+jets","f");
+leg->AddEntry(h_sig_new, "mStop=800, mN1=100","f");
+leg->Draw("SAME");
+.q
+.x doAllSig.C
+.q
+.x doAllSig.C
+.q
+TFile *f_singletop = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/singletop.root")
+TTree *singletop = (TTree*)f_singletop->Get("singletop_Nom");
+singletop->Draw("amt2>>h_amt2","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+TFile *f_singletop = TFile::Open("/disk/userdata00/atlas_data2/herwig/ntuples/170110/singletop.root")
+TTree *singletop = (TTree*)f_singletop->Get("singletop_Nom");
+singletop->Draw("amt2>>h_amt2","xs_weight * sf_total * weight * 36.5e3 * (HLT_xe100_mht_L1XE50 && met>200000 && n_bjet>=2)")
+h_amt2->Draw("HIST")
+h_amt2->SetFillColor(3)
+h_amt2->SetFillStyle(1001)
+h_amt2->Draw("HIST")
+h_amt2->SetLineColor(3)
+h_amt2->Draw("HIST")

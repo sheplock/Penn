@@ -1,0 +1,73 @@
+RC_CXX       = g++
+RC_LD        = g++
+RC_CXXFLAGS  = -I/cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root -I/cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw -O2 -Wall -fPIC -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/include -I/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/include -g -Wno-tautological-undefined-compare -DROOTCORE -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/include -pipe -W -Wall -Wno-deprecated -pedantic -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long -Wdeprecated-declarations -DROOTCORE_RELEASE_SERIES=23 -DROOTCORE_TEST_FILE=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1\" -DROOTCORE_TEST_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630\" -DASG_TEST_FILE_DATA=\"/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1\" -DASG_TEST_FILE_MC=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1\" -DXAOD_STANDALONE -DXAOD_ANALYSIS -DASGTOOL_STANDALONE -DROOTCORE_PACKAGE=\"MultiDraw\" 
+RC_DICTFLAGS = -I/cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root -I/cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw -O2 -Wall -fPIC -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/include -I/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/include -g -Wno-tautological-undefined-compare -DROOTCORE -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/include -pipe -W -Wall -Wno-deprecated -pedantic -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-long-long -Wdeprecated-declarations -DROOTCORE_RELEASE_SERIES=23 -DROOTCORE_TEST_FILE=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1\" -DROOTCORE_TEST_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630\" -DASG_TEST_FILE_DATA=\"/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1\" -DASG_TEST_FILE_MC=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1\" -DXAOD_STANDALONE -DXAOD_ANALYSIS -DASGTOOL_STANDALONE -DROOTCORE_PACKAGE=\"MultiDraw\" 
+RC_INCFLAGS  = -I/cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root -I/cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/include -I/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/include -DROOTCORE -I/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/include -DROOTCORE_RELEASE_SERIES=23 -DROOTCORE_TEST_FILE=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1\" -DROOTCORE_TEST_DATA=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630\" -DASG_TEST_FILE_DATA=\"/afs/cern.ch/atlas/project/PAT/xAODs/p2410/data15_13TeV.00270448.physics_Main.merge.AOD.r6943_p2410/AOD.06297575._000522.pool.root.1\" -DASG_TEST_FILE_MC=\"/afs/cern.ch/user/a/asgbase/patspace/xAODs/r6630/mc15_13TeV.410000.PowhegPythiaEvtGen_P2012_ttbar_hdamp172p5_nonallhad.recon.AOD.e3698_s2608_s2183_r6630_tid05352803_00/AOD.05352803._000242.pool.root.1\" -DXAOD_STANDALONE -DXAOD_ANALYSIS -DASGTOOL_STANDALONE -DROOTCORE_PACKAGE=\"MultiDraw\"
+RC_LIBFLAGS  = -shared -m64 -L/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/lib -lCore -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic 
+RC_BINFLAGS  = -L/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib -L/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/lib/x86_64-slc6-gcc49-opt -lMultiDraw -lHist -lTreePlayer -lTree -lEventLoop -lProofPlayer -lProof -lHist -lTree -lAsgTools -lxAODRootAccess -lNet -lTree -lxAODEventFormat -lxAODCore -lRIO -lAthContainers -lAthLinks -lxAODRootAccessInterfaces -lCxxUtils -lboost_regex -lboost_system -lSampleHandler -lPyROOT -lProof -lTree -lAsg_GoogleTest -lRootCoreUtils -lboost_regex -lTree -lHist -m64 -L/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase/x86_64/root/6.04.12-x86_64-slc6-gcc49-opt/lib -lCore -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic
+
+
+all_MultiDraw : dep_MultiDraw package_MultiDraw
+
+package_MultiDraw :  /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib/libMultiDraw.so /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/ut_condor_large /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/ut_alg_cflow /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/ut_alg_hist postcompile_MultiDraw
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib/libMultiDraw.so :  /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/FormulaSvc.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/Formula.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgHist.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgCFlow.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.o | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib
+	$(SILENT)echo Linking `basename $@`
+	$(SILENT)$(RC_LD) /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/FormulaSvc.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/Formula.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgHist.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgCFlow.o /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.o $(RC_LIBFLAGS) -L/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/lib/x86_64-slc6-gcc49-opt -lTree -lTreePlayer -lHist -o $@
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/%.o : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root/%.cxx | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/FormulaSvc.d
+	$(SILENT)echo Compiling `basename $@`
+	$(SILENT)rc --internal check_dep_cc MultiDraw $@
+	$(SILENT)$(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/%.d : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root/%.cxx | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES)  -- $@ $< 
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj : 
+	$(SILENT)echo Making directory $@
+	$(SILENT)mkdir -p $@
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.o : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root/LinkDef.h /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.headers | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.d
+	$(SILENT)echo Compiling `basename $@`
+	$(SILENT)rc --internal check_dep_cc MultiDraw $@
+	$(SILENT)rc --internal rootcint $(ROOTSYS)/bin/rootcint $(RC_INCFLAGS) /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root/LinkDef.h /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.cxx /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.headers /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib MultiDraw
+	$(SILENT)$(RC_CXX) $(RC_DICTFLAGS) $(INCLUDES) -c /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.cxx -o $@
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.headers : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root/LinkDef.h | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES) -D__CINT__ -D__MAKECINT__ -D__CLING__ -Wno-unknown-pragmas -- $@ $< 
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.d : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/Root/LinkDef.h | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES)  -- $@ $< 
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib : 
+	$(SILENT)echo Making directory $@
+	$(SILENT)mkdir -p $@
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/% : /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/%.o | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib/libMultiDraw.so /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin
+	$(SILENT)echo Linking `basename $@`
+	$(SILENT)$(RC_LD) -o $@ $< $(RC_BINFLAGS)
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/%.o : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/test/%.cxx | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_condor_large.d
+	$(SILENT)echo Compiling `basename $@`
+	$(SILENT)rc --internal check_dep_cc MultiDraw $@
+	$(SILENT)$(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/%.d : /cvmfs/atlas.cern.ch/repo/sw/ASG/AnalysisBase/2.3.45/MultiDraw/test/%.cxx | /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj
+	$(SILENT)echo Making dependency for `basename $<`
+	$(SILENT)rc --internal make_dep $(RC_CXX) $(RC_CXXFLAGS) $(INCLUDES)  -- $@ $< 
+
+/home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin : 
+	$(SILENT)echo Making directory $@
+	$(SILENT)mkdir -p $@
+
+postcompile_MultiDraw :  /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/lib/libMultiDraw.so /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/ut_condor_large /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/ut_alg_cflow /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/test-bin/ut_alg_hist
+	$(SILENT)rc --internal postcompile_pkg MultiDraw
+
+
+dep_MultiDraw : /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_alg_hist.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgCFlow.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/Formula.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.headers /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_alg_cflow.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_condor_large.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/FormulaSvc.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgHist.d
+
+
+-include  /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_alg_hist.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgCFlow.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/Formula.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/MultiDrawCINT.headers /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_alg_cflow.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/ut_condor_large.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/FormulaSvc.d /home/shepj/xaod/ROOTAnalysisTutorial/RootCoreBin/obj/x86_64-slc6-gcc49-opt/MultiDraw/obj/AlgHist.d

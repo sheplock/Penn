@@ -1,0 +1,1001 @@
+   98  rc compile
+   99  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  100  ls
+  101  rm -r submitDir/
+  102  rc compile
+  103  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  104  rm -r submitDir/
+  105  rc compile
+  106  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  107  rm -r submitDir/
+  108  rc compile
+  109  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  110  rm -r submitDir/
+  111  rc compile
+  112  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  113  ls
+  114  cd submitDir/
+  115  ls
+  116  root -l driver.root 
+  117  ls
+  118  cd input/
+  119  ls
+  120  root -l DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  121  ls
+  122  cd ..
+  123  ls
+  124  cd hist
+  125  ls
+  126  root -l DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  127  ls
+  128  cd ..
+  129  ls
+  130  cd ..
+  131  ls
+  132  rm -r submitDir/
+  133  cd /disk/userdata00/atlas_data2/shepj/
+  134  ls
+  135  cd DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1/
+  136  ls
+  137  root -l DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1 
+  138  ls
+  139  cd /home/shepj/xaod/ROOTAnalysisTutorial/
+  140  ls
+  141  cd Run
+  142  ls
+  143  rc compile
+  144  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  145  rm -r submitDir/
+  146  rc compile
+  147  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  148  rm -r submitDir/
+  149  rc compile
+  150  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  151  ls
+  152  cd submitDir/
+  153  ls
+  154  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  155  cd hist
+  156  ls
+  157  root -l DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  158  ls
+  159  cd ..
+  160  ks
+  161  ls
+  162  cd input/
+  163  ls
+  164  cd ..
+  165  ls
+  166  cd ..
+  167  ls
+  168  rm -r submitDir/
+  169  rc compile
+  170  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  171  rm -r submitDir/
+  172  rc compile
+  173  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  174  rm -r submitDir/
+  175  rc compile
+  176  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  177  ls
+  178  rm -r submitDir/
+  179  rc compile
+  180  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  181  rm -r submitDir/
+  182  rc compile
+  183  ls
+  184  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  185  ls
+  186  rm -r submitDir/
+  187  ls
+  188  cd ..
+  189  ls
+  190  cd /disk/userdata00/atlas_data2/shepj/
+  191  ls
+  192  cd ..
+  193  ls
+  194  cd /home/shepj/xaod/
+  195  ls
+  196  cd ..
+  197  ls
+  198  cd gen15
+  199  ;s
+  200  ls
+  201  cd ..
+  202  ls
+  203  cd xaod/ROOTAnalysisTutorial/
+  204  ls
+  205  cd MyAnalysis/
+  206  ls
+  207  cd MyAnalysis/
+  208  ls
+  209  cd ..
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd Run/
+  214  ls
+  215  emacs ATestRun.cxx &
+  216  ls
+  217  rc compile
+  218  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  219  emacs ATestRun.cxx &
+  220  rc compile
+  221  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  222  rm -r submitDir/
+  223  rc compile
+  224  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  225  cd /disk/userdata00/atlas_data2/shepj
+  226  ls
+  227  cd ..
+  228  cd lipeles/
+  229  ls
+  230  cd mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/
+  231  ls
+  232  cd /disk/userdata00/atlas_data2/shepj
+  233  ls
+  234  asetup 20.1.X.Y-VAL,rel_5,AtlasDerivation,gcc48,here --nightliesarea=/afs/cern.ch/atlas/software/builds/nightlies/
+  235  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile .DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  236  kill %4
+  237  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  238  ls
+  239  cd DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1/
+  240  ls
+  241  cd ..
+  242  ls
+  243  emacs log.EVNTtoDAOD 
+  244  cd
+  245  ls
+  246  cd xaod/
+  247  ls
+  248  cd ROOTAnalysisTutorial/
+  249  ls
+  250  cd Run/
+  251  ls
+  252  rm -r submitDir/
+  253  ls
+  254  cd /disk/userdata00/atlas_data2/shepj/
+  255  ls
+  256  cd DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1/
+  257  ls
+  258  cd /home/shepj/xaod/ROOTAnalysisTutorial/Run
+  259  ls
+  260  rc compile
+  261  cd ..
+  262  ls
+  263  rcSetup
+  264  rc compile
+  265  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  266  ls
+  267  cd RUn
+  268  cd Run
+  269  ls
+  270  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  271  cd ..
+  272  ls
+  273  cd Run
+  274  ls
+  275  rm -r submitDir
+  276  rc compile
+  277  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  278  rm -r submitDir/
+  279  rc compile
+  280  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  281  rm -r submitDir/
+  282  rc compile
+  283  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  284  rm -r submitDir/
+  285  rc compile
+  286  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  287  rm -r submitDir/
+  288  rc compile
+  289  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  290  rc compile
+  291  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  292  rm -r submitDir/
+  293  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("submitDir")'
+  294  root -l /disk/userdata00/atlas_data2/shepj/DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1/DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1 
+  295  ls
+  296  cd /disk/userdata00/atlas_data2/shepj/
+  297  ls
+  298  more log.EVNTtoDAOD 
+  299  ls
+  300  ls -ltr
+  301  history | grep Reco
+  302  date
+  303  top
+  304  ls
+  305  mv DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1 DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old
+  306  Reco_
+  307  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  308  ls -ltr
+  309  less log
+  310  less log.EVNTtoDAOD 
+  311  cd -
+  312  ls -ltr
+  313  root -l DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  314  ls
+  315  checkSG.py DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  316  ================================================================================
+  317                            Container type | StoreGate keys
+  318  -----------------------------------------+--------------------------------------
+  319                  xAOD::MissingETContainer | MET_Truth, MET_TruthRegions
+  320                        xAOD::JetContainer | AntiKt4TruthJets, AntiKt4TruthWZJets
+  321             xAOD::TruthVertexAuxContainer | TruthVerticesAux.
+  322                xAOD::TruthVertexContainer | TruthVertices
+  323                                 EventInfo | McEventInfo
+  324                     xAOD::JetAuxContainer | AntiKt4TruthJetsAux., AntiKt4TruthWZJetsAux.
+  325               xAOD::MissingETAuxContainer | MET_TruthAux., MET_TruthRegionsAux.
+  326                        xAOD::EventAuxInfo | EventInfoAux.
+  327                                DataHeader | StreamDAOD_TRUTH1
+  328           xAOD::TruthParticleAuxContainer | TruthElectronsAux., TruthMuonsAux., TruthNeutrinosAux., TruthParticlesAux., TruthPhotonsAux., TruthTausAux.
+  329              xAOD::TruthParticleContainer | JetInputTruthParticles, JetInputTruthParticlesNoWZ, TruthElectrons, TruthLabelBHadronsFinal, TruthLabelBHadronsInitial, TruthLabelBQuarksFinal, TruthLabelCHadronsFinal, TruthLabelCHadronsInitial, TruthLabelCQuarksFinal, TruthLabelHBosons, TruthLabelPartons, TruthLabelTQuarksFinal, TruthLabelTausFinal, TruthLabelWBosons, TruthLabelZBosons, TruthMuons, TruthNeutrinos, TruthParticles, TruthPhotons, TruthTaus
+  330                           xAOD::EventInfo | EventInfo
+  331              xAOD::TruthEventAuxContainer | TruthEventsAux.
+  332                 xAOD::TruthEventContainer | TruthEvents
+  333  ================================================================================
+  334  ls
+  335  cd xaod/ROOTAnalysisTutorial/
+  336  ls
+  337  cd MyAnalysis/
+  338  ls
+  339  cd Root/
+  340  ls
+  341  emacs MyxAODAnalysis.cxx &
+  342  cd ..
+  343  ls
+  344  cd ..
+  345  ls
+  346  cd Rub
+  347  cd Run
+  348  ls
+  349  emacs ATestRun.cxx &
+  350  cd ..
+  351  ls
+  352  rcSetup
+  353  cd ..
+  354  ls
+  355  cd ROOTAnalysisTutorial/
+  356  ls
+  357  setupATLAS
+  358  rcSetup
+  359  ls
+  360  cd Run
+  361  ls
+  362  rc compile
+  363  cd ..
+  364  ls
+  365  cd MyAnalysis/
+  366  ls
+  367  cd MyAnalysis/
+  368  ls
+  369  emacs MyxAODAnalysis.h &
+  370  cd ..
+  371  ls
+  372  cd ..
+  373  ls
+  374  rc compile
+  375  cd Run/
+  376  ls
+  377  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  378  rc compile
+  379  cd ..
+  380  ls
+  381  rc compile
+  382  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  383  ls
+  384  cd Run
+  385  ls
+  386  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  387  cd .
+  388  cd ..
+  389  ls
+  390  rc compile
+  391  cd Run
+  392  ls
+  393  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  394  ls
+  395  cd Ztautau_test/
+  396  ls
+  397  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  398  cd ..
+  399  ls
+  400  cd ..
+  401  ls
+  402  rc compile
+  403  cd Run
+  404  rm -r Ztautau_test/
+  405  ls
+  406  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  407  ls
+  408  cd Ztautau_test/
+  409  ls
+  410  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  411  cd ..
+  412  ls
+  413  rm -r Ztautau_test/
+  414  ls
+  415  cd ..
+  416  ls
+  417  rc compile
+  418  ls
+  419  cd Run
+  420  ls
+  421  cd
+  422  ls
+  423  cd xaod
+  424  cd ROOT
+  425  cd ROOTAnalysisTutorial/
+  426  ls
+  427  rc compile
+  428  ls
+  429  cd Run
+  430  ls
+  431  cd ..
+  432  ls
+  433  rc compile
+  434  ls
+  435  top
+  436  ls
+  437  cd xaod
+  438  ls
+  439  cd ROOTAnalysisTutorial/
+  440  ls
+  441  cd Run
+  442  cd ..
+  443  ls
+  444  setupATLAS
+  445  rcSetup
+  446  cd Run
+  447  emacs ../MyAnalysis/Root/MyxAODAnalysis.cxx &
+  448  pwd
+  449  ls
+  450  rc compile
+  451  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  452  ls
+  453  cd Ztautau/
+  454  ls
+  455  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  456  cd ..
+  457  l
+  458  cd
+  459  ls
+  460  cd Herwig++-2.7.1
+  461  ls
+  462  cd src/
+  463  ls
+  464  less LHC-Ztautau.in
+  465  l
+  466  ls
+  467  cd defaults/
+  468  ls
+  469  cd ..
+  470  ls
+  471  cd ..
+  472  ls
+  473  cd Con
+  474  cd Config/
+  475  ls
+  476  cd ..
+  477  cd Contrib/
+  478  ls
+  479  cd rootsimple2/
+  480  ls
+  481  cd ..
+  482  ls
+  483  cd TauAnalysis/
+  484  s
+  485  ls
+  486  less TauToLeptonsAnalysis.cc
+  487  cd
+  488  cd xaod
+  489  ls
+  490  cd ROOTAnalysisTutorial/
+  491  ls
+  492  cd Run
+  493  ls
+  494  rm -r Ztautau/
+  495  rc compile
+  496  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  497  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  498  ls
+  499  root -l /disk/userdata00/atlas_data2/shepj/DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  500  pwd
+  501  ls
+  502  rm -r Ztautau/
+  503  rc compile
+  504  ls
+  505  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  506  ls
+  507  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  508  rm -r Ztautau/
+  509  ls
+  510  rc compile
+  511  rc comile
+  512  rc compile
+  513  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  514  ls
+  515  rm -r Ztautau/
+  516  ls
+  517  rc compile
+  518  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  519  ls
+  520  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  521  ls
+  522  rm -r Ztautau/
+  523  ls
+  524  rc compile
+  525  ls
+  526  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  527  rm -r Ztautau/
+  528  rc compile
+  529  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  530  rm -r Ztautau/
+  531  rc compile
+  532  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  533  rm -r Ztautau/
+  534  ls
+  535  rc compile
+  536  rm -r Ztautau/
+  537  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  538  rm -r Ztautau/
+  539  rc compile
+  540  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  541  rc compile
+  542  rm -r Ztautau/
+  543  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  544  rm -r Ztautau/
+  545  rc compile
+  546  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  547  rm -r Ztautau/
+  548  rc compile
+  549  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  550  rm -r Ztautau/
+  551  rc compile
+  552  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  553  rm -r Ztautau/
+  554  rc compile
+  555  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  556  rm -r Ztautau/
+  557  rc compile
+  558  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  559  rc compile
+  560  rm -r Ztautau/
+  561  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  562  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  563  rm -r Ztautau/
+  564  rc compile
+  565  ls
+  566  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  567  ls
+  568  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  569  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  570  rm -r Ztautau/
+  571  rc compile
+  572  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  573  rm -r Ztautau/
+  574  rc compile
+  575  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  576  ls
+  577  rm -r Ztautau/
+  578  rc compile
+  579  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  580  rm -r Ztautau/
+  581  rc compile
+  582  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  583  rm -r Ztautau/
+  584  rc compile
+  585  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  586  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  587  kill %5
+  588  ls
+  589  rm -r Ztautau/
+  590  ls
+  591  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  592  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  593  rm -r Ztautau/
+  594  rc compile
+  595  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  596  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  597  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  598  ls
+  599  setupATLAS
+  600  localSetupDQ2Client 
+  601  ls
+  602  cd /disk/userdata00/atlas_data2/shepj/
+  603  ls
+  604  setupATLAS
+  605  localSetupDQ2Client 
+  606  y
+  607  ls
+  608  cd xaod
+  609  cd ROOTAnalysisTutorial/
+  610  ls
+  611  setupATLAS
+  612  rcSetup
+  613  ls
+  614  cd MyAnalysis/
+  615  ls
+  616  cd Root/
+  617  ls
+  618  emacs MyxAODAnalysis.cxx &
+  619  cd ..
+  620  ls
+  621  cd ..
+  622  ls
+  623  cd Run
+  624  ls
+  625  rm -r Ztautau
+  626  rc compile
+  627  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  628  ls
+  629  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  630  rm -r Ztautau/
+  631  rc compile
+  632  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  633  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  634  rm -r Ztautau/
+  635  rc compile
+  636  ls
+  637  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  638  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  639  ls
+  640  rm -r Ztautau/
+  641  ls
+  642  rc compile
+  643  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  644  ls
+  645  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  646  rm -r Ztautau/
+  647  rc compile
+  648  ls
+  649  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  650  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  651  rm -r Ztautau/
+  652  rc compile
+  653  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  654  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  655  ls
+  656  less runargs.generate.py 
+  657  ls
+  658  cd xaod/ROOTAnalysisTutorial/Run/
+  659  ls
+  660  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  661  cd ..
+  662  ls
+  663  setupATLAS
+  664  rcSetup
+  665  root -l Run/Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1.root 
+  666  setupATLAS
+  667  cd xaod/ROOTAnalysisTutorial/
+  668  ls
+  669  rcSetup
+  670  cd Run/
+  671  ls
+  672  cd ..
+  673  ls
+  674  rm -r Plots
+  675  ls
+  676  top
+  677  ls
+  678  ;s
+  679  ls
+  680  cd
+  681  ls
+  682  cd /disk/userdata00/atlas_data2/shepj/
+  683  ls
+  684  rm DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  685  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 1000
+  686  asetup 20.1.X.Y-VAL,rel_5,AtlasDerivation,gcc48,here --nightliesarea=/afs/cern.ch/atlas/software/builds/nightlies/
+  687  setupATLAS
+  688  asetup 20.1.X.Y-VAL,rel_5,AtlasDerivation,gcc48,here --nightliesarea=/afs/cern.ch/atlas/software/builds/nightlies/
+  689  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 1000
+  690  kill %1
+  691  ls
+  692  rm -r DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  693  ls
+  694  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 100
+  695  ls
+  696  more log.EVNTtoDAOD 
+  697  ls
+  698  rm DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  699  cd ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/
+  700  ls
+  701  root -l EVNT.05271304._000681.pool.root.1 
+  702  ls
+  703  cd ../../shepj/
+  704  ls
+  705  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  706  ls
+  707  setupATLAS
+  708  cd /disk/userdata00/atlas_data2/shepj/
+  709  setupATLAS
+  710  asetup 20.1.X.Y-VAL,rel_5,AtlasDerivation,gcc48,here --nightliesarea=/afs/cern.ch/atlas/software/builds/nightlies/
+  711  ls
+  712  rm -r DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  713  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  714  cd ..
+  715  l
+  716  ls
+  717  cd /home/shepj/
+  718  ls
+  719  cd xaod/
+  720  ls
+  721  cd ROOTAnalysisTutorial/
+  722  ls
+  723  cd
+  724  cd Run
+  725  ls
+  726  cd xaod/ROOTAnalysisTutorial/
+  727  ls
+  728  cd Run
+  729  ls
+  730  emacs ATestRun.cxx &
+  731  cd /disk/userdata00/atlas_data2/shepj/
+  732  ls
+  733  cd DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old/
+  734  ls
+  735  mv DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1 DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old
+  736  ls
+  737  ls
+  738  cd xaod
+  739  ls
+  740  cd ROOTAnalysisTutorial/
+  741  ls
+  742  setupATLAS
+  743  rcSetup 
+  744  ls
+  745  cd MyAnalysis/
+  746  ls
+  747  cd Root/
+  748  ls
+  749  emacs MyxAODAnalysis.cxx &
+  750  ls
+  751  cd ..
+  752  ls
+  753  cd ..
+  754  ls
+  755  cd Run
+  756  ls
+  757  rc compile
+  758  cd ..
+  759  ls
+  760  rc compile
+  761  ls
+  762  cd Run
+  763  ls
+  764  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  765  ls
+  766  cd Ztautau_test
+  767  ls
+  768  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  769  cd ..
+  770  ls
+  771  rm -r Ztautau
+  772  rm -r Ztautau_test/
+  773  ls
+  774  cd ..
+  775  ls
+  776  cd MyAnalysis/Root/
+  777  ls
+  778  emacs MyxAODAnalysis.cxx &
+  779  cd ..
+  780  ls
+  781  cd ..
+  782  ls
+  783  rc compile
+  784  cd Run
+  785  ls
+  786  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  787  rc compile
+  788  rm -r Ztautau/
+  789  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  790  rm -r Ztautau/
+  791  rc compile
+  792  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  793  l;s
+  794  ls
+  795  rm -r Ztautau/
+  796  rc compile
+  797  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  798  ls
+  799  rm -r Ztautau/
+  800  ls
+  801  rc compile
+  802  ls
+  803  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  804  rm -r Ztautau/
+  805  rc compile
+  806  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  807  rm -r Ztautau/
+  808  rc compile
+  809  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  810  rm -r Ztautau/
+  811  rc compile
+  812  ls
+  813  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  814  rm -r Ztautau/
+  815  rc compile
+  816  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  817  ls
+  818  cd Ztautau/
+  819  ls
+  820  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  821  jobs
+  822  kill %1
+  823  cd ..
+  824  ls
+  825  cd ..
+  826  ls
+  827  cd MyAnalysis/
+  828  ls
+  829  cd Root/
+  830  ls
+  831  emacs MyxAODAnalysis.cxx &
+  832  cd 
+  833  cd xaod/ROOTAnalysisTutorial/
+  834  ls
+  835  cd Run/
+  836  ls
+  837  rm -r Ztautau/
+  838  ls
+  839  rc compile
+  840  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  841  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  842  ls
+  843  cd xaod
+  844  ls
+  845  cd ..
+  846  ls
+  847  top
+  848  ls
+  849  cd xaod
+  850  ls
+  851  cd ..
+  852  ls
+  853  cd ..
+  854  ls
+  855  date
+  856  grep 
+  857  grep --help
+  858  ls
+  859  top
+  860  ls
+  861  cd shepj/
+  862  ls
+  863  top
+  864  jobs
+  865  kill %1
+  866  jobs
+  867  ls
+  868  cd xaod
+  869  ls
+  870  cd ..
+  871  ls
+  872  setupATLAS
+  873  cd xaod
+  874  ls
+  875  cd ROOTAnalysisTutorial/
+  876  ls
+  877  rcSetup
+  878  ls
+  879  cd Run
+  880  ls
+  881  emacs ATestRun.cxx &
+  882  rc compile
+  883  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau_test")'
+  884  cd
+  885  cd xaod/ROOTAnalysisTutorial/Run/Ztautau_test
+  886  ls
+  887  cd ..
+  888  ls
+  889  rm -r Ztautau_test
+  890  ls
+  891  top
+  892  ls
+  893  top
+  894  '
+  895  .q
+  896  ls
+  897  top
+  898  ls
+  899  top
+  900  ls
+  901  cd /disk/userdata00/atlas_data2/shepj/
+  902  s
+  903  ls
+  904  rm -r DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  905  setupATLAS
+  906  asetup 20.1.X.Y-VAL,rel_5,AtlasDerivation,gcc48,here --nightliesarea=/afs/cern.ch/atlas/software/builds/nightlies/
+  907  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  908  ls
+  909  Reco_tf.py --help
+  910  ls
+  911  top
+  912  ls
+  913  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 10
+  914  ls
+  915  rm -r DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1
+  916  ls
+  917  setupATLAS
+  918  asetup 20.1.X.Y-VAL,rel_5,AtlasDerivation,gcc48,here --nightliesarea=/afs/cern.ch/atlas/software/builds/nightlies/
+  919  Reco_tf.py --inputEVNTFile ../lipeles/mc15_13TeV.361420.Sherpa_CT10_Ztautau_Pt0_70_CVetoBVeto.evgen.EVNT.e3733_tid05271304_00/EVNT.05271304._000681.pool.root.1 --outputDAODFile DAOD.05271304._000681.pool.root.1 --reductionConf TRUTH1 --maxEvents 100
+  920  ls
+  921  emacs log.EVNTtoDAOD 
+  922  ls
+  923  cd xaod
+  924  ls
+  925  cd ROOTAnalysisTutorial/
+  926  ls
+  927  setupATLAS
+  928  rcSetup
+  929  ls
+  930  cd Run
+  931  ls
+  932  cd Ztautau/
+  933  ls
+  934  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  935  ls
+  936  cd ..
+  937  l
+  938  ls
+  939  rm -r Ztautau/
+  940  ls
+  941  emacs ATestRun.cxx
+  942  bg
+  943  cd
+  944  ls
+  945  cd xaod/ROOTAnalysisTutorial/Run
+  946  ls
+  947  rc compile
+  948  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  949  ls
+  950  cd Ztautau
+  951  ls
+  952  root -l hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  953  cd ..
+  954  rm -r Ztautau/
+  955  rc compile
+  956  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  957  rm -r Ztautau
+  958  rc compile
+  959  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  960  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  961  rm -r Ztautau/
+  962  rc compile
+  963  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  964  rm -r Ztautau/
+  965  rc compile
+  966  ls
+  967  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  968  rm -r Ztautau/
+  969  rc compile
+  970  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  971  rm -r Ztautau/
+  972  rc compile
+  973  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  974  rm -r Ztautau/
+  975  rc compile
+  976  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  977  rm -r Ztautau/
+  978  rc compile
+  979  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  980  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  981  rm -r Ztautau/
+  982  rc compile
+  983  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  984  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  985  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  986  rm -r Ztautau/
+  987  rc compile
+  988  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  989  ls
+  990  rm -r Ztautau/
+  991  rc compile
+  992  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  993  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  994  rm -r Ztautau/
+  995  rc compile
+  996  root -l '$ROOTCOREDIR/scripts/load_packages.C' 'ATestRun.cxx ("Ztautau")'
+  997  root -l Ztautau/hist-DAOD_TRUTH1.DAOD.05271304._000681.pool.root.1_old.root 
+  998  ls
+  999  ~ykeisuk
+ 1000  ~ykeisuke
+ 1001  cd ~ykeisuke
+ 1002  ls
+ 1003  less keisuke_setup.sh 
+ 1004  cd ~shepj
+ 1005  ls
+ 1006  cd gen15
+ 1007  ls
+ 1008  setupATLAS
+ 1009  asetup 19.2.4.2,AtlasProduction,here
+ 1010  get_files MadGraphControl_SimplifiedModel_C1N2_WZ.py
+ 1011  pwd
+ 1012  svn co svn+ssh://svn.cern.ch/reps/Generators/MC15JobOptions MC15JobOptions
+ 1013  svn co svn+ssh://james.thomas.sheplock@svn.cern.ch/reps/atlasoff/Generators/MC15JobOptions MC15JobOptions
+ 1014  svn co svn+ssh://jsheploc@svn.cern.ch/reps/atlasoff/Generators/MC15JobOptions MC15JobOptions
+ 1015  ssh jsheploc@lxplus.cern.ch
+ 1016  svn co svn+ssh://lipeles@svn.cern.ch/reps/atlasoff/Generators/MC15JobOptions MC15JobOptions
+ 1017  rm -fr MC15JobOptions
+ 1018  more ~ykeisuke
+ 1019  more ~ykeisuke/checkout.sh 
+ 1020  cp ~ykeisuke/checkout.sh .
+ 1021  mkdir MC15JobOptions
+ 1022  cd MC15JobOptions/
+ 1023  mv ../checkout.sh .
+ 1024  kinit
+ 1025  kinit jsheploc@CERN.CH
+ 1026  emacs -nw checkout.sh 
+ 1027  source checkout.sh
+ 1028  less checkout.sh
+ 1029  ls -ltr
+ 1030  cd susycontrol/
+ 1031  ls
+ 1032  cd ../common/
+ 1033  ls
+ 1034  cd ..
+ 1035  ls
+ 1036  more checkout.sh
+ 1037  svn co svn+ssh://jsheploc@svn.cern.ch/reps/atlasoff/Generators/MC15JobOptions/trunk/share/DSID406000 
+ 1038  svn co svn+ssh://jsheploc@svn.cern.ch/reps/atlasoff/Generators/MC15JobOptions/trunk/share/DSID406xxx
+ 1039  mkdir share 
+ 1040  mv DSID406xxx/ share/
+ 1041  ls
+ 1042  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py 6xxx
+ 1043  pwd
+ 1044  ls
+ 1045  cd ..
+ 1046  ls
+ 1047  ls MC15JobOptions/
+ 1048  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15JobOptions/share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1049  ls 'MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py
+q
+ 1050  asetup 19.2.4.2,AtlasProduction,here
+ 1051  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15JobOptions/share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1052  find . -name MadGraphControl_SimplifiedModelPostInclude.py
+ 1053  cp MC15JobOptions/common/MadGraph/* ./MC15JobOptions/
+ 1054  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15JobOptions/share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1055  ls MC15JobOptions/MadGraphControl_SimplifiedModel_C1N2_WZ.py
+ 1056  ls MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py
+ 1057  ls
+ 1058  mkdir old
+ 1059  mv  * old/
+ 1060  ls
+ 1061  mv old/MC15JobOptions .
+ 1062  ls
+ 1063  cp MC15JobOptions/share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py  .
+ 1064  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1065  cp MC15JobOptions/susycontrol/* MC15JobOptions/
+ 1066  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1067  less log.generate 
+ 1068  ls
+ 1069  ls MC15JobOptions//MadGraphControl_SimplifiedModelPostInclude.py
+ 1070  ls MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py
+ 1071  less MC15JobOptions/MadGraphControl_SimplifiedModelPostInclude.py
+ 1072  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1073  ls
+ 1074  rm jobReport* log.generate metadata.xml run* _joproxy15 
+ 1075  rm -r jobReport* log.generate metadata.xml run* _joproxy15 
+ 1076  ls
+ 1077  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1078  ls -ltr
+ 1079  more jobReport.txt 
+ 1080   ls
+ 1081  ls log.generate 
+ 1082  more log.generate 
+ 1083  export MADGRAPH_DATA=.
+ 1084  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1085  export MADGRAPH_DATA=`pwd`
+ 1086  printenv MADGRAPH_DATA
+ 1087  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 10 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1088  more log.generate 
+ 1089  ls
+ 1090  grep -i merge MC15JobOptions/*
+ 1091  grep -i merge *py
+ 1092  ls MC15JobOptions/
+ 1093  ls MC15JobOptions/MadGraphControl_SimplifiedModel_C1N2_WZ.py
+ 1094  less MC15JobOptions/MadGraphControl_SimplifiedModel_C1N2_WZ.py
+ 1095  Generate_tf.py --ecmEnergy 13000 --runNumber 406004 --firstEvent 0 --maxEvents 1000 --randomSeed 0 --jobConfig MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py --outputEVNTFile test2.EVNT.root 
+ 1096  history
+ 1097  history > saved.history

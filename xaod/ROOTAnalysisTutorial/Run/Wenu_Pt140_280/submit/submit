@@ -1,0 +1,11 @@
+executable              = run
+universe                = vanilla
+log                     = submit/run.log
+output                  = submit/log-$(Process).out
+error                   = submit/log-$(Process).err
+initialdir              = /home/shepj/xaod/ROOTAnalysisTutorial/Run/Wenu_Pt140_280_weights
+arguments               = $(Process)
+
+getenv = True
+ nice_user = TRUE
+queue 12

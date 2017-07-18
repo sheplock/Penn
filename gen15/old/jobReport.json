@@ -1,0 +1,132 @@
+{
+  "argValues": {
+    "athenaopts": [
+      "--preloadlib=/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64/libintlc.so.5:/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/sw/IntelSoftware/linux/x86_64/xe2013/composer_xe_2013.3.163/compiler/lib/intel64/libimf.so"
+    ], 
+    "ecmEnergy": 13000.0, 
+    "firstEvent": 0, 
+    "jobConfig": {
+      "all": [
+        "MC15JobOptions/share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py"
+      ]
+    }, 
+    "maxEvents": {
+      "all": 10
+    }, 
+    "outputEVNTFile": [
+      "test2.EVNT.root"
+    ], 
+    "printEvts": 5, 
+    "randomSeed": {
+      "all": 0
+    }, 
+    "runNumber": 406004
+  }, 
+  "cmdLine": "'/cvmfs/atlas.cern.ch/repo/sw/software/x86_64-slc6-gcc47-opt/19.2.4/AtlasProduction/19.2.4.2/InstallArea/share/bin/Generate_tf.py' '--ecmEnergy' '13000' '--runNumber' '406004' '--firstEvent' '0' '--maxEvents' '10' '--randomSeed' '0' '--jobConfig' 'MC15JobOptions/share/DSID406xxx/MC15.406004.MadGraphPythia8EvtGen_A14NNPDF23LO_C1N2_WZ_400_100_3lep.py' '--outputEVNTFile' 'test2.EVNT.root'", 
+  "created": "2015-06-10T16:09:21", 
+  "executor": [
+    {
+      "asetup": null, 
+      "errMsg": "Non-zero return code from generate (8)", 
+      "exeConfig": {
+        "outputs": [
+          "EVNT"
+        ], 
+        "script": "athena.py", 
+        "substep": null
+      }, 
+      "logfileReport": {
+        "countSummary": {
+          "CRITICAL": 0, 
+          "DEBUG": 0, 
+          "ERROR": 1, 
+          "FATAL": 1, 
+          "IGNORED": 0, 
+          "INFO": 21, 
+          "UNKNOWN": 3, 
+          "VERBOSE": 0, 
+          "WARNING": 2
+        }, 
+        "details": {
+          "ERROR": [
+            {
+              "count": 1, 
+              "firstLine": 26, 
+              "message": "Py:MadGraphUtils    ERROR Bad idea to generate 20.0 events.  MadGraph wont complain, but the job will never end.  Bailing out now."
+            }
+          ], 
+          "FATAL": [
+            {
+              "count": 1, 
+              "firstLine": 37, 
+              "message": "RuntimeError: Error in MadGraph generation"
+            }
+          ]
+        }
+      }, 
+      "metaData": {}, 
+      "name": "generate", 
+      "rc": 8, 
+      "statusOK": false, 
+      "validation": false
+    }
+  ], 
+  "exitAcronym": "TRF_EXEC_FAIL", 
+  "exitCode": 65, 
+  "exitMsg": "Non-zero return code from generate (8); Logfile error in log.generate: \"RuntimeError: Error in MadGraph generation\"", 
+  "exitMsgExtra": "", 
+  "files": {
+    "input": [], 
+    "output": [
+      {
+        "argName": "outputEVNTFile", 
+        "dataset": null, 
+        "subFiles": [
+          {
+            "AODFixVersion": null, 
+            "beam_energy": null, 
+            "beam_type": null, 
+            "conditions_tag": null, 
+            "file_guid": null, 
+            "file_size": null, 
+            "file_type": null, 
+            "geometry": null, 
+            "integrity": null, 
+            "lumi_block": null, 
+            "name": "test2.EVNT.root", 
+            "nentries": null, 
+            "run_number": null
+          }
+        ], 
+        "type": "EVNT"
+      }
+    ]
+  }, 
+  "name": "Generate_tf", 
+  "reportVersion": "1.0.1", 
+  "resource": {
+    "executor": {
+      "generate": {
+        "cpuTime": 2, 
+        "wallTime": 3
+      }
+    }, 
+    "machine": {
+      "cpu_family": "6", 
+      "linux_distribution": [
+        "Scientific Linux", 
+        "6.6", 
+        "Carbon"
+      ], 
+      "model": "26", 
+      "model_name": "Intel(R) Xeon(R) CPU           X5570  @ 2.93GHz", 
+      "node": "at3i00.hep.upenn.edu", 
+      "platform": "Linux-2.6.32-504.3.3.el6.x86_64-x86_64-with-redhat-6.6-Carbon"
+    }, 
+    "transform": {
+      "cpuTime": 1, 
+      "externalCpuTime": 0, 
+      "wallTime": 4
+    }
+  }
+}
